@@ -1,0 +1,533 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Modeltech_pe_edu_10.4a/examples
+vALU
+Z1 !s110 1459553895
+!i10b 1
+!s100 z0]oC_hJSb@XJG7U8e[j83
+IjL5Y=6S]o;B_JRRHEP:EJ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1458530415
+8C:/Modeltech_pe_edu_10.4a/examples/ALU.v
+FC:/Modeltech_pe_edu_10.4a/examples/ALU.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1459553895.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ALU.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vALU_tb
+R1
+!i10b 1
+!s100 jSd<HN8BCSzG=h2InJOE_0
+IeFQf;=:j1eVXU7^bni@@L0
+R2
+R0
+w1458529863
+8C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u_tb
+vALUControl
+R1
+!i10b 1
+!s100 HFNc0WA9fM@Rez<mC02An2
+I80oko>Db1X^`k;8HRh09=2
+R2
+R0
+w1458513772
+8C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+FC:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u@control
+vALUControl_tb
+R1
+!i10b 1
+!s100 NUd^UEoKLP1NO7367cM:;2
+I_Ql@VTM@gCP8J=c]kDPbV1
+R2
+R0
+w1458515120
+8C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u@control_tb
+vAnd_gate
+Z6 !s110 1459553896
+!i10b 1
+!s100 PzE1Bl00`U>Ia@_z4oFfJ1
+I0750VEaA=8bLfinJQgb]62
+R2
+R0
+w1459461759
+8C:/Modeltech_pe_edu_10.4a/examples/And_gate.v
+FC:/Modeltech_pe_edu_10.4a/examples/And_gate.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1459553896.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/And_gate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/And_gate.v|
+!s101 -O0
+!i113 1
+R5
+n@and_gate
+vAnd_gate_tb
+R6
+!i10b 1
+!s100 B<_WDjkO8Eg64_bWHI;Hk0
+IU<n=FZmeHXJ9C@UjLCAGn2
+R2
+R0
+w1459461784
+8C:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@and_gate_tb
+vandg
+!s110 1458088752
+!i10b 1
+!s100 hKDYz>590MUD^JmYP[1::2
+I`Z^Kh5InezjR6WKbf:Zb>0
+R2
+R0
+w1458088747
+8C:/Modeltech_pe_edu_10.4a/examples/2_to_1_MUX.v
+FC:/Modeltech_pe_edu_10.4a/examples/2_to_1_MUX.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1458088752.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/2_to_1_MUX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/2_to_1_MUX.v|
+!s101 -O0
+!i113 1
+R5
+vcontrolUnit
+R1
+!i10b 1
+!s100 ^zRdoiQ^z3J7ezKZ=CFH@3
+ILIa@W]S73C5=?1@6O_LJD3
+R2
+R0
+w1458508737
+8C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
+FC:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v|
+!s101 -O0
+!i113 1
+R5
+ncontrol@unit
+vcontrolUnit_tb
+R1
+!i10b 1
+!s100 ]2SaC:ZPT9lM]hidF_fDi3
+I^1:R0hVgCgfm;;hF6MYi>2
+R2
+R0
+w1458510579
+8C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v|
+!s101 -O0
+!i113 1
+R5
+ncontrol@unit_tb
+vmy_fsm_tb
+Z8 !s110 1458083040
+!i10b 1
+!s100 mi7]<QMUA9@>`YS_dfUAB2
+IV6_@mCmn2DVKj[V_8HS^Y3
+R2
+R0
+w1458082906
+8C:/Users/nickk_000/Downloads/myfsm_tb.v
+FC:/Users/nickk_000/Downloads/myfsm_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1458083040.000000
+!s107 C:/Users/nickk_000/Downloads/myfsm_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nickk_000/Downloads/myfsm_tb.v|
+!s101 -O0
+!i113 1
+R5
+vmyfsm
+R8
+!i10b 1
+!s100 7TAiD8>T@L2V9^^jK?75O0
+Ie?KS__GGW<Ef1Z@M>cR:63
+R2
+R0
+w1458082896
+8C:/Users/nickk_000/Downloads/myfsm.v
+FC:/Users/nickk_000/Downloads/myfsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1458083039.000000
+!s107 C:/Users/nickk_000/Downloads/myfsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nickk_000/Downloads/myfsm.v|
+!s101 -O0
+!i113 1
+R5
+vProcessor
+R6
+!i10b 1
+!s100 cDnnK^EPzhbIh8f27<Nnb1
+I:?lH[gi_1>U:_bShBYkPG3
+R2
+R0
+w1459552588
+8C:/Modeltech_pe_edu_10.4a/examples/Processor.v
+FC:/Modeltech_pe_edu_10.4a/examples/Processor.v
+L0 2
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Processor.v|
+!s101 -O0
+!i113 1
+R5
+n@processor
+vProcessor_tb
+R6
+!i10b 1
+!s100 ai;1gTP<3H6V2G>3WmR;K2
+I`][I=9DZJ491JADOaFAnO1
+R2
+R0
+w1459553881
+8C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@processor_tb
+vreg32
+Z9 !s110 1459553894
+!i10b 1
+!s100 =:hOYX5NV<lMK]>Cb1Kn@2
+IRE`h0R>EdFeeaPCT;bdY41
+R2
+R0
+w1458318130
+8C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+FC:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1459553894.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v|
+!s101 -O0
+!i113 1
+R5
+vReg32_tb
+!s110 1458268903
+!i10b 1
+!s100 aW44k3X6a3M@QI<g413]50
+I7Mo=_iM0fOU=WY?YkN[JW0
+R2
+R0
+w1458268899
+Z11 8C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
+Z12 FC:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1458268903.000000
+Z13 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@reg32_tb
+vreg32_tb
+R9
+!i10b 1
+!s100 i_n94Oj=l4CSD@a2ciOHZ3
+I_nm7_I]E0MoV?:nWhZf140
+R2
+R0
+w1458330927
+R11
+R12
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+R13
+R14
+!s101 -O0
+!i113 1
+R5
+vregFile
+R1
+!i10b 1
+!s100 H_1>P_hg@U?PmJPm8HkSV0
+I[CV9JT[U?Q[C5`RB0_]PN1
+R2
+R0
+w1459549875
+8C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
+FC:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v|
+!s101 -O0
+!i113 1
+R5
+nreg@file
+vregFile_tb
+R1
+!i10b 1
+!s100 o<SzzEVomA0JIH_^G`S`90
+I?QzKYnR9UI1bO<=RQHcTh3
+R2
+R0
+w1459550809
+8C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v|
+!s101 -O0
+!i113 1
+R5
+nreg@file_tb
+vShift_left_two
+R6
+!i10b 1
+!s100 RlYcNDPWChld;0WP317@i2
+Iik:VB`YE=1D3bN;hNUoj^1
+R2
+R0
+w1459268986
+8C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+FC:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v|
+!s101 -O0
+!i113 1
+R5
+n@shift_left_two
+vShift_left_two_tb
+R6
+!i10b 1
+!s100 >6a3H86^Gn]hb;=2;J[KU1
+IPo?mm=3n[WoJW9JAZMfm72
+R2
+R0
+w1459268647
+8C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@shift_left_two_tb
+vSign_extend
+R6
+!i10b 1
+!s100 gJ<ZN0Dl3Uka<42@H8Q?Q0
+IeSbLQ7=MFZlcf8>fCXmPT0
+R2
+R0
+w1459277361
+8C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v
+FC:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v|
+!s101 -O0
+!i113 1
+R5
+n@sign_extend
+vSign_extend_tb
+R6
+!i10b 1
+!s100 SG095KZSTOYk3;^d;8>j20
+IU[Z<CYI=9KGiIil`37@Ui3
+R2
+R0
+w1459276792
+8C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@sign_extend_tb
+vTwo_to_one_MUX
+R9
+!i10b 1
+!s100 ezWHgNMbZ;5<?NH]Vl[aO3
+I<P<l_85;<:lH=V=K<a^Pm2
+R2
+R0
+w1458092814
+8C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v
+FC:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v|
+!s101 -O0
+!i113 1
+R5
+n@two_to_one_@m@u@x
+vTwo_to_one_MUX_tb
+R9
+!i10b 1
+!s100 S?H9?Y_=NOE[a<MLCmgV?3
+IoL^RU5XBfYC?eD@76b71J2
+R2
+R0
+w1458263695
+8C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
+FC:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@two_to_one_@m@u@x_tb

@@ -1,0 +1,13 @@
+module andg(out, inp1, inp2);
+input inp1, inp2;
+output out;
+
+always @(inp1 or inp2)
+begin
+if (inp1 == 0)
+  out = inp1 & inp2;
+else
+  out = inp1 || inp2;
+end
+endmodule
+

@@ -1,0 +1,15 @@
+C:/Users/nickk_000/Downloads/myfsm.v {1 {vlog -work work -stats=none C:/Users/nickk_000/Downloads/myfsm.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module myfsm
+
+Top level modules:
+	myfsm
+
+} {} {}} C:/Users/nickk_000/Downloads/myfsm_tb.v {1 {vlog -work work -stats=none C:/Users/nickk_000/Downloads/myfsm_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module my_fsm_tb
+
+Top level modules:
+	my_fsm_tb
+
+} {} {}}

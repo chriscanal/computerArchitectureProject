@@ -1,0 +1,134 @@
+C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module regFile_tb
+
+Top level modules:
+	regFile_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALU.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/And_gate.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/And_gate.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module And_gate
+
+Top level modules:
+	And_gate
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module regFile
+
+Top level modules:
+	regFile
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module reg32_tb
+
+Top level modules:
+	reg32_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Two_to_one_MUX
+
+Top level modules:
+	Two_to_one_MUX
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Processor
+
+Top level modules:
+	Processor
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Sign_extend
+
+Top level modules:
+	Sign_extend
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Two_to_one_MUX_tb
+
+Top level modules:
+	Two_to_one_MUX_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Sign_extend_tb
+
+Top level modules:
+	Sign_extend_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controlUnit_tb
+
+Top level modules:
+	controlUnit_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Shift_left_two_tb
+
+Top level modules:
+	Shift_left_two_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALUControl_tb
+
+Top level modules:
+	ALUControl_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module reg32
+
+Top level modules:
+	reg32
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/And_gate_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module And_gate_tb
+
+Top level modules:
+	And_gate_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controlUnit
+
+Top level modules:
+	controlUnit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Shift_left_two
+
+Top level modules:
+	Shift_left_two
+
+} {} {}}
