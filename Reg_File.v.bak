@@ -11,15 +11,18 @@ module regFile (readAddress0, readAddress1, writeAddress, writeData, writeEnable
     rF[5'b01000] = 32'b00000000000000000000000000000001;
     rF[5'b01001] = 32'b00000000000000000000000000000001;
     rF[5'b01010] = 32'b00000000000000000000000000000000;
+    rF[5'b01011] = 32'b00000000000000000000000000000000;
   end
-
+  
+  always @ (readAddress0 or readAddress1)
+    begin
+      readData0 = rF[readAddress0];
+      readData1 = rF[readAddress1];
+    end
   always @ (posedge clk)
     begin
       if (writeEnable)
 	rF[writeAddress] = writeData;
-      
-      readData0 = rF[readAddress0];
-      readData1 = rF[readAddress1];
     end
 
 endmodule

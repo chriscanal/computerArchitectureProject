@@ -3,7 +3,7 @@ module ALUControl_tb;
   reg [5:0] Funct;
   wire [3:0] Operation;
 
-  ALUControl myALUControlUnit(.ALUOp(ALUOp), .Funct(Funct), .Operation(Operation))
+  ALUControl myALUControlUnit(.ALUOp(ALUOp), .Funct(Funct), .Operation(Operation));
 
 initial begin
   ALUOp = 2'b00;

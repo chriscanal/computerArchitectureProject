@@ -4,69 +4,6 @@
 # Compile of Two_to_one_MUX_tb.v was successful.
 # Compile of Reg_32_bit.v was successful.
 # Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v failed with 1 errors.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 1 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 2 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v failed with 1 errors.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 1 error.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v failed with 1 errors.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 1 error.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
 # Compile of Reg_File.v was successful.
 # Compile of Reg_file_tb.v was successful.
 # Compile of controlUnit.v was successful.
@@ -84,28 +21,8 @@
 # Compile of Processor.v was successful.
 # Compile of Processor_tb.v was successful.
 # 20 compiles, 0 failed with no errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
+# Load canceled
+vsim -gui work.reg32_tb
 # //  ModelSim PE Student Edition 10.4a Apr  7 2015 
 # //
 # //  Copyright 1991-2015 Mentor Graphics Corporation
@@ -125,88 +42,16 @@ vsim -gui work.Processor_tb
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
 # vsim -gui 
-# Start time: 17:33:31 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'writeEnable'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myProcessor/myRegFile File: C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
-# ** Error (suppressible): (vsim-3053) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(14): Illegal output or inout port connection for port 'DataOut'.
-#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myProcessor/myALU File: C:/Modeltech_pe_edu_10.4a/examples/ALU.v
-# ** Error (suppressible): (vsim-3053) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(14): Illegal output or inout port connection for port 'ZeroOut'.
-#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myProcessor/myALU File: C:/Modeltech_pe_edu_10.4a/examples/ALU.v
-# Error loading design
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:35:44 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'writeEnable'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myProcessor/myRegFile File: C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:38:56 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
+# Start time: 22:48:56 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
 add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/storedData
 run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(17)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 17
 # Compile of Two_to_one_MUX.v was successful.
 # Compile of Two_to_one_MUX_tb.v was successful.
 # Compile of Reg_32_bit.v was successful.
@@ -228,422 +73,354 @@ run
 # Compile of Processor.v was successful.
 # Compile of Processor_tb.v was successful.
 # 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
+vsim -gui work.Reg32_tb
 # vsim 
-# Start time: 17:43:30 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
+# Start time: 22:53:11 on Apr 06,2016
+# Loading work.Reg32_tb
+# Loading work.reg32
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'inputData'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /Reg32_tb/myReg32 File: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'storedData'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /Reg32_tb/myReg32 File: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
 add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
+sim:/Reg32_tb/clk \
+sim:/Reg32_tb/rst \
+sim:/Reg32_tb/inputData \
+sim:/Reg32_tb/loadEnable \
+sim:/Reg32_tb/storedData
 run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 22:54:23 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+add wave  \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/storedData
+run
+# Load canceled
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 22:56:34 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+add wave  \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/storedData
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 22:58:53 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+add wave  \
+sim:/reg32_tb/storedData \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 23:07:21 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+add wave  \
+sim:/reg32_tb/storedData \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Two_to_one_MUX.v was successful with warnings.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 23:32:26 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'inputData'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /reg32_tb/myReg32 File: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+add wave  \
+sim:/reg32_tb/storedData \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/inpuData \
+sim:/reg32_tb/clk
+run
+# Load canceled
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 23:34:45 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'inputData'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /reg32_tb/myReg32 File: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+add wave  \
+sim:/reg32_tb/storedData \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/clk
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.reg32_tb
+# vsim 
+# Start time: 23:36:39 on Apr 06,2016
+# Loading work.reg32_tb
+# Loading work.reg32
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'inputData'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /reg32_tb/myReg32 File: C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
+add wave  \
+sim:/reg32_tb/storedData \
+sim:/reg32_tb/rst \
+sim:/reg32_tb/loadEnable \
+sim:/reg32_tb/inputData \
+sim:/reg32_tb/inpuData \
+sim:/reg32_tb/clk
+run
+vsim -gui work.regFile_tb
+# vsim 
+# Start time: 23:37:33 on Apr 06,2016
+# Loading work.regFile_tb
+# Loading work.regFile
+add wave  \
+sim:/regFile_tb/writeEnable \
+sim:/regFile_tb/writeData \
+sim:/regFile_tb/writeAddress \
+sim:/regFile_tb/readData1 \
+sim:/regFile_tb/readData0 \
+sim:/regFile_tb/readAddress1 \
+sim:/regFile_tb/readAddress0 \
+sim:/regFile_tb/clk
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.regFile_tb
+# vsim 
+# Start time: 23:51:46 on Apr 06,2016
+# Loading work.regFile_tb
+# Loading work.regFile
+add wave  \
+sim:/regFile_tb/writeEnable \
+sim:/regFile_tb/writeData \
+sim:/regFile_tb/writeAddress \
+sim:/regFile_tb/readData1 \
+sim:/regFile_tb/readData0 \
+sim:/regFile_tb/readAddress1 \
+sim:/regFile_tb/readAddress0 \
+sim:/regFile_tb/clk
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.regFile_tb
+# vsim 
+# Start time: 23:53:11 on Apr 06,2016
+# Loading work.regFile_tb
+# Loading work.regFile
+add wave  \
+sim:/regFile_tb/writeEnable \
+sim:/regFile_tb/writeData \
+sim:/regFile_tb/writeAddress \
+sim:/regFile_tb/readData1 \
+sim:/regFile_tb/readData0 \
+sim:/regFile_tb/readAddress1 \
+sim:/regFile_tb/readAddress0 \
+sim:/regFile_tb/clk
+run
 # Load canceled
 vsim -gui work.Processor_tb
 # vsim 
-# Start time: 17:45:44 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:48:02 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:53:47 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:55:24 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 17:56:45 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 1 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 1 error.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 18:26:34 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 18:31:38 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.regFile_tb
-# vsim 
-# Start time: 18:40:17 on Apr 01,2016
-# Loading work.regFile_tb
-# Loading work.regFile
-add wave  \
-sim:/regFile_tb/writeEnable \
-sim:/regFile_tb/writeData \
-sim:/regFile_tb/writeAddress \
-sim:/regFile_tb/readData1 \
-sim:/regFile_tb/readData0 \
-sim:/regFile_tb/readAddress1 \
-sim:/regFile_tb/readAddress0 \
-sim:/regFile_tb/rF \
-sim:/regFile_tb/clk
-run
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 18:47:26 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(20)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 20
-vsim -gui work.regFile_tb
-# vsim 
-# Start time: 18:48:21 on Apr 01,2016
-# Loading work.regFile_tb
-# Loading work.regFile
-add wave  \
-sim:/regFile_tb/writeEnable \
-sim:/regFile_tb/writeData \
-sim:/regFile_tb/writeAddress \
-sim:/regFile_tb/readData1 \
-sim:/regFile_tb/readData0 \
-sim:/regFile_tb/readAddress1 \
-sim:/regFile_tb/readAddress0 \
-sim:/regFile_tb/clk
-run
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 18:53:16 on Apr 01,2016
+# Start time: 00:03:35 on Apr 07,2016
 # Loading work.Processor_tb
 # Loading work.Processor
 # Loading work.regFile
@@ -657,31 +434,10 @@ sim:/Processor_tb/clk \
 sim:/Processor_tb/ALU_zero_result \
 sim:/Processor_tb/ALU_result
 run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(21)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(26)
+#    Time: 700 ns  Iteration: 0  Instance: /Processor_tb
 # 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 21
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 1 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 1 error.
+# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 26
 # Compile of Two_to_one_MUX.v was successful.
 # Compile of Two_to_one_MUX_tb.v was successful.
 # Compile of Reg_32_bit.v was successful.
@@ -705,7 +461,7 @@ run
 # 20 compiles, 0 failed with no errors.
 vsim -gui work.Processor_tb
 # vsim 
-# Start time: 19:01:03 on Apr 01,2016
+# Start time: 00:09:00 on Apr 07,2016
 # Loading work.Processor_tb
 # Loading work.Processor
 # Loading work.regFile
@@ -718,284 +474,6 @@ sim:/Processor_tb/destReg \
 sim:/Processor_tb/clk \
 sim:/Processor_tb/ALU_zero_result \
 sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(21)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 21
-add wave  \
-sim:/Processor_tb/test \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 2 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 19:10:54 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/test \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(21)
-#    Time: 100 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 21
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 2 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 2 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 2 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v failed with 2 errors.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 1 failed with 2 errors.
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 19:16:56 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/test \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(21)
-#    Time: 200 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 21
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 19:24:00 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/test \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/ALU_result
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(22)
-#    Time: 300 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 22
-# Compile of Two_to_one_MUX.v was successful.
-# Compile of Two_to_one_MUX_tb.v was successful.
-# Compile of Reg_32_bit.v was successful.
-# Compile of Reg_32_bit_tb.v was successful.
-# Compile of Reg_File.v was successful.
-# Compile of Reg_file_tb.v was successful.
-# Compile of controlUnit.v was successful.
-# Compile of controlUnit_tb.v was successful.
-# Compile of ALUControl.v was successful.
-# Compile of ALUControl_tb.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_tb.v was successful.
-# Compile of Shift_left_two.v was successful.
-# Compile of Shift_left_two_tb.v was successful.
-# Compile of Sign_extend.v was successful.
-# Compile of Sign_extend_tb.v was successful.
-# Compile of And_gate.v was successful.
-# Compile of And_gate_tb.v was successful.
-# Compile of Processor.v was successful.
-# Compile of Processor_tb.v was successful.
-# 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 19:29:03 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_result \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/test
 run
 # ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(26)
 #    Time: 500 ns  Iteration: 0  Instance: /Processor_tb
@@ -1022,23 +500,3 @@ run
 # Compile of Processor.v was successful.
 # Compile of Processor_tb.v was successful.
 # 20 compiles, 0 failed with no errors.
-vsim -gui work.Processor_tb
-# vsim 
-# Start time: 19:38:39 on Apr 01,2016
-# Loading work.Processor_tb
-# Loading work.Processor
-# Loading work.regFile
-# Loading work.ALU
-add wave  \
-sim:/Processor_tb/destReg \
-sim:/Processor_tb/srcReg1 \
-sim:/Processor_tb/srcReg2 \
-sim:/Processor_tb/clk \
-sim:/Processor_tb/ALU_result \
-sim:/Processor_tb/ALU_zero_result \
-sim:/Processor_tb/test
-run
-# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(26)
-#    Time: 700 ns  Iteration: 0  Instance: /Processor_tb
-# 1
-# Break in Module Processor_tb at C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v line 26

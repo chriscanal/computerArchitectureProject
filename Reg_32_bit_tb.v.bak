@@ -1,12 +1,10 @@
 module reg32_tb; 
 reg [31:0] inputData;
 reg clk, rst, loadEnable;
-reg [31:0] storedData;
+wire [31:0] storedData;
 
-/**** DESIGN TO SIMULATE (my_fsm) INSTANTIATION ****/
-reg32 myReg32(.clk(clk), .rst(rst), .inputData(inputData), .loadEnable(loadEnable), .storedData(storedData));
+reg32 myReg32(.clk(clk), .rst(rst), .inputData(inpuData), .loadEnable(loadEnable), .storedData(storedData));
 
-/****RESET AND CLOCK SECTION****/
 initial 
 begin
 clk=0; 
@@ -17,7 +15,6 @@ end
 
 always #50clk=~clk; /* 10MHz clock (50*1ns*2) with 50% duty-cycle */
 
-/****SPECIFY THE INPUT WAVEFORM x ****/
 initial begin
 
   #100 /*Allow '0' to be initially loaded into the register
@@ -37,7 +34,7 @@ initial begin
   #100 inputData= 32'b00000000000000000000000000000100;
 
   /*Set reset to 1, all bits should go to 0 at the next posedge of the clock*/
-  #100 rst = 1;
+  #70 rst = 1;
 
   /*Disable reset bit, on the next posedge output should read '4' again*/
   #100 rst = 0;
@@ -46,7 +43,7 @@ initial begin
   #100 loadEnable=0;
   #100 inputData= 32'b00000000000000000000000000000001;
 
-  #200 $finish;  //stop simulation
+  //#200 $finish;  //stop simulation
    //without this, it will not stop
 end
 endmodule

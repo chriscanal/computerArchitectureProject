@@ -3,12 +3,15 @@ module reg32 (clk, storedData, inputData, loadEnable, rst);
   input clk, rst, loadEnable;
   output [31:0] storedData;
   reg [31:0] storedData;
+  always @ (rst)
+    begin
+      if (rst) 
+    	#1 storedData = 0; 
+    end
   always @ (posedge clk)
-  if (rst) 
-    #1 storedData = 0; 
-  else 
-    if (loadEnable)
-      #1 storedData = inputData;
-    else
-      #1 storedData = storedData;
+      if (loadEnable)
+        #1 storedData = inputData;
+      else
+        #1 storedData = storedData;
+
 endmodule

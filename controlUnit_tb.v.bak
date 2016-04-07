@@ -3,7 +3,7 @@ wire RegDst, ALUSrc, MemtoReg, RegWrite,  MemRead, MemWrite, Branch, Jump;
 wire [1:0] ALUOp;
 reg [5:0] Opcode;
 
-controlUnit myControlUnit(.Opcode(Opcode), .RegDst(RegDst), .ALUSrc(ALUSrc), .RegWrite(MemtoReg), .MemtoReg(RegWrite),  .MemRead(MemRead), .MemWrite(MemWrite), .Branch(Branch), .ALUOp(ALUOp), .Jump(Jump));
+controlUnit myControlUnit(.Opcode(Opcode), .RegDst(RegDst), .ALUSrc(ALUSrc), .MemtoReg(MemtoReg), .RegWrite(RegWrite),  .MemRead(MemRead), .MemWrite(MemWrite), .Branch(Branch), .ALUOp(ALUOp), .Jump(Jump));
 
 
 /****SPECIFY THE INPUT WAVEFORM x ****/

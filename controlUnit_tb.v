@@ -5,8 +5,6 @@ reg [5:0] Opcode;
 
 controlUnit myControlUnit(.Opcode(Opcode), .RegDst(RegDst), .ALUSrc(ALUSrc), .MemtoReg(MemtoReg), .RegWrite(RegWrite),  .MemRead(MemRead), .MemWrite(MemWrite), .Branch(Branch), .ALUOp(ALUOp), .Jump(Jump));
 
-
-/****SPECIFY THE INPUT WAVEFORM x ****/
 initial begin
   Opcode = 6'b000000; // R-format
   #100 Opcode = 6'b100011; // load word
@@ -15,6 +13,5 @@ initial begin
   #100 Opcode = 6'b010000; // jump
   
    #100 $finish;  //stop simulation
-   //without this, it will not stop
 end
 endmodule

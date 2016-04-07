@@ -4,8 +4,6 @@ wire out;
 
 Two_to_one_MUX myMUX(.sel(sel), .A(A), .B(B), .out(out));
 
-
-/****SPECIFY THE INPUT WAVEFORM x ****/
 initial begin
   A = 0;
   B = 0;
@@ -21,7 +19,6 @@ initial begin
 
   
    #100 $finish;  //stop simulation
-   //without this, it will not stop
 end
 
 initial

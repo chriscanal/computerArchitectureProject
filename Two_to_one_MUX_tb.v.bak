@@ -26,7 +26,7 @@ end
 
 initial
   $monitor(
-    "select=%b in0=%b in1=%b out=%b",
+    "sel=%b A=%b B=%b out=%b",
     sel, A, B, out);
 
 endmodule

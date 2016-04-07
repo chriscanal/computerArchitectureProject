@@ -20,6 +20,5 @@ initial begin
   #100 Funct = 6'b001010; // set on less than
   
    #100 $finish;  //stop simulation
-   //without this, it will not stop
 end
 endmodule

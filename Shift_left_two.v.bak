@@ -4,7 +4,7 @@ module Shift_left_two(out, in);
   //reg [29:0] temp;
   always @(in)
   begin
-    out = 4*in
+    out = 4*in;
     //out = temp + 2'b00;
     //out = in;
   end
