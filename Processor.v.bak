@@ -21,7 +21,6 @@ module Processor(destReg, srcReg1, srcReg2, clk, ALUToWriteReg, ALU_zero_result,
   end
   always@(posedge clk)
   begin
-    test = test + 2'b01;
     ALUToWriteReg = ALU_result;
   end
 endmodule

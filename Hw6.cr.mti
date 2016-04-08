@@ -61,12 +61,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Sign_extend
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/memory.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/memory.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Processor_tb
+-- Compiling module Memory
 
 Top level modules:
-	Processor_tb
+	Memory
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Two_to_one_MUX_tb
+
+Top level modules:
+	Two_to_one_MUX_tb
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -75,12 +82,26 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Sign_extend_tb
 
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controlUnit_tb
+
+Top level modules:
+	controlUnit_tb
+
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Shift_left_two_tb
 
 Top level modules:
 	Shift_left_two_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALUControl_tb
+
+Top level modules:
+	ALUControl_tb
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -95,6 +116,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	And_gate_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Shift_left_two
+
+Top level modules:
+	Shift_left_two
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015

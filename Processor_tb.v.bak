@@ -7,6 +7,7 @@ module Processor_tb;
   wire [1:0] test;
 
   Processor myProcessor(destReg, srcReg1, srcReg2, clk, ALU_result, ALU_zero_result, test);
+  Memory myMemory
 
   initial begin
   clk = 0;
@@ -18,7 +19,7 @@ module Processor_tb;
   destReg = 5'b01010; srcReg1 = 5'b01000; srcReg2 = 5'b01001;
 
   // wait 100 ns then add contents of reg8(1) and reg10(2) and store in reg 11(0) 
-  #400 destReg = 5'b01011; srcReg1 = 5'b01000; srcReg2 = 5'b01010;
+  #200 destReg = 5'b01011; srcReg1 = 5'b01000; srcReg2 = 5'b01010;
 
   // wait 100 ns then add contents of reg8(1) and reg9(0) and store in reg 11(3) 
   #200 destReg = 5'b01011; srcReg1 = 5'b01000; srcReg2 = 5'b01001;
