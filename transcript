@@ -22,3 +22,267 @@
 # Compile of Processor_tb.v was successful.
 # Compile of memory.v was successful.
 # 21 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 0 failed with no errors.
+# reading C:/Modeltech_pe_edu_10.4a/win32pe_edu/../modelsim.ini
+project open C:/Modeltech_pe_edu_10.4a/examples/Hw6
+# Loading project Hw6
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 2 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 1 failed with 2 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 1 failed with 1 error.
+vsim -gui work.ALU_tb
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui 
+# Start time: 14:44:38 on Apr 10,2016
+# Loading work.ALU_tb
+# Loading work.ALU
+add wave  \
+sim:/ALU_tb/ZeroOut \
+sim:/ALU_tb/DataOut \
+sim:/ALU_tb/DataIn1 \
+sim:/ALU_tb/DataIn0 \
+sim:/ALU_tb/ALUControl
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v(29)
+#    Time: 600 ns  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v line 29
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -gui work.Sign_extend_tb
+# vsim 
+# Start time: 15:17:39 on Apr 10,2016
+# Loading work.Sign_extend_tb
+# Loading work.Sign_extend
+add wave  \
+sim:/Sign_extend_tb/out \
+sim:/Sign_extend_tb/in
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v(12)
+#    Time: 300 ns  Iteration: 0  Instance: /Sign_extend_tb
+# 1
+# Break in Module Sign_extend_tb at C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v line 12
+vsim -gui work.ALU_tb
+# vsim 
+# Start time: 15:34:22 on Apr 10,2016
+# Loading work.ALU_tb
+# Loading work.ALU
+add wave  \
+sim:/ALU_tb/ZeroOut \
+sim:/ALU_tb/DataOut \
+sim:/ALU_tb/DataIn1 \
+sim:/ALU_tb/DataIn0 \
+sim:/ALU_tb/ALUControl
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v(29)
+#    Time: 600 ns  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Modeltech_pe_edu_10.4a/examples/ALU_tb.v line 29
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# 21 compiles, 0 failed with no errors.

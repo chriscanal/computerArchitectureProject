@@ -54,12 +54,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	ALU_tb
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Sign_extend
+-- Compiling module Processor
 
 Top level modules:
-	Sign_extend
+	Processor
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/memory.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/memory.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -74,6 +74,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	Two_to_one_MUX_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Processor_tb
+
+Top level modules:
+	Processor_tb
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
