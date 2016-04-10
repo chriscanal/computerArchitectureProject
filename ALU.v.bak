@@ -13,7 +13,7 @@ module ALU(ALUControl, DataIn0, DataIn1, DataOut, ZeroOut);
 	DataOut = DataIn0 + DataIn1;
       4'b0111: // set on less than
 	begin
-	  temp = DataIn0 - DataIn1;
+	  temp = $signed(DataIn0) - $signed(DataIn1);
 	  if (temp[31 +: 1] == 1)
 	    DataOut = 32'b00000000000000000000000000000001;
 	  else
