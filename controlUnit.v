@@ -6,7 +6,7 @@ module controlUnit (Opcode, RegDst, ALUSrc, MemtoReg, RegWrite,  MemRead, MemWri
   always @ (Opcode)
     begin
       case (Opcode)
-	6'b000000: // R-format
+	6'b000000: // R-format: Instructions add, addi, 
 	  begin
 	    RegDst = 1; ALUSrc = 0; MemtoReg = 0; RegWrite = 1; MemRead = 0; MemWrite = 0; Branch = 0; Jump = 0;
 	    ALUOp = 2'b10;
@@ -31,6 +31,17 @@ module controlUnit (Opcode, RegDst, ALUSrc, MemtoReg, RegWrite,  MemRead, MemWri
 	    RegDst = 0; ALUSrc = 0; MemtoReg = 0; RegWrite = 0; MemRead = 0; MemWrite = 0; Branch = 0; Jump = 1;
 	    ALUOp = 2'b00;
 	  end
+	6'b001000: // addi
+	  begin
+	    RegDst = 0; ALUSrc = 0; MemtoReg = 0; RegWrite = 1; MemRead = 0; MemWrite = 0; Branch = 0; Jump = 0;
+	    ALUOp = 2'b00;
+	  end
+	6'b001001: // addiu
+	  begin
+	    RegDst = 0; ALUSrc = 0; MemtoReg = 0; RegWrite = 1; MemRead = 0; MemWrite = 0; Branch = 0; Jump = 0;
+	    ALUOp = 2'b00;
+	  end
+
       endcase
     end
 

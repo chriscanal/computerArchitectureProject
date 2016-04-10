@@ -24,3 +24,12 @@ module Processor(destReg, srcReg1, srcReg2, clk, ALUToWriteReg, ALU_zero_result,
     ALUToWriteReg = ALU_result;
   end
 endmodule
+
+/*Structure of processor:
+Input: Instr
+Output: register file? (would need to make rF an output of regFle)
+
+Control:
+  - always@(instr[31:26]): update control lines to correct values for instruction
+  - 
+*/

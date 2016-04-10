@@ -26,6 +26,7 @@ module Processor(destReg, srcReg1, srcReg2, clk, ALUToWriteReg, ALU_zero_result,
 endmodule
 
 /*Structure of processor:
+This is a test
 Input: Instr
 Output: register file? (would need to make rF an output of regFle)
 
