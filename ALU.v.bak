@@ -4,7 +4,7 @@ module ALU(ALUControl, DataIn0, DataIn1, DataOut, ZeroOut);
   output reg [31:0] DataOut;
   output reg ZeroOut;
 
-  reg temp;
+  reg [31:0] temp;
 
   always @ (ALUControl or DataIn0 or DataIn1)
   begin
