@@ -1,8 +1,7 @@
-module Two_to_one_MUX(out, A, B, sel);
-input [31:0] A, B;
+module Two_to_one_MUX_5bit(out, A, B, sel);
+input [4:0] A, B;
 input sel;
-output reg [31:0] out;
-reg out;
+output reg [4:0] out;
 always @(A or B or sel)
 begin
   if(sel == 0)

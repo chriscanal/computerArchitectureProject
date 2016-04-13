@@ -18,8 +18,7 @@ module ALU(ALUControl, DataIn0, DataIn1, DataOut, ZeroOut);
 	end
       4'b0110: // beq
 	begin
-	  DataOut = DataIn0 - DataIn1;
-	  if (DataOut == 32'b00000000000000000000000000000000)
+	  if ((DataIn0 - DataIn1) == 32'b00000000000000000000000000000000)
 	    ZeroOut = 1;
 	  else
 	    ZeroOut = 0;
