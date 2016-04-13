@@ -3,7 +3,7 @@ module Processor(instruction, clk, dummyOut);
   input clk;
   input [31:0] instruction;
 
-  output dummyOut;
+  output reg dummyOut;
 
   /*    regFile     */
   //inputs

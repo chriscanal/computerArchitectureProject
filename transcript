@@ -288,3 +288,27 @@ run
 #    Time: 900 ns  Iteration: 0  Instance: /Two_to_one_MUX_tb
 # 1
 # Break in Module Two_to_one_MUX_tb at C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v line 23
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 15 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# 23 compiles, 1 failed with 15 errors.

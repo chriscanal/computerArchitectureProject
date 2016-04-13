@@ -40,6 +40,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	reg32_tb
 
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Two_to_one_MUX_5bit_tb
+
+Top level modules:
+	Two_to_one_MUX_5bit_tb
+
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Two_to_one_MUX
@@ -53,13 +60,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	ALU_tb
-
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Processor
-
-Top level modules:
-	Processor
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -81,6 +81,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	Memory
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Two_to_one_MUX_tb
+
+Top level modules:
+	Two_to_one_MUX_tb
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
