@@ -42,7 +42,7 @@ module Processor(instruction, clk, processorOut);
   
 
 
-*-----------MUXALUSrc-----------*/
+/*-----------MUXALUSrc-----------*/
   //INPUTS
   reg [31:0] MUXALUSrcInputA;
   reg [31:0] MUXALUSrcInputB;
@@ -76,21 +76,45 @@ module Processor(instruction, clk, processorOut);
   
   //OUTPUTS
   wire [31:0] MUXJumpOutput;
-/*---------END MUXjump---------*/
+/*---------END MUXJump---------*/
+
+
+
+
+/*-----------MUXBranch-----------*/
+  //INPUTS
+  reg [31:0] MUXBranchInputA;
+  reg [31:0] MUXBranchInputB;
+  reg MUXBranchControl;
+  
+  //OUTPUTS
+  wire [31:0] MUXBranchOutput;
+/*---------END MUXBranch---------*/
 
 
 
   
 /*-----------regFile-----------*/
   //INPUTS
-  reg[4:0] writeRegInput, readReg1Input, readReg2Input;
+  reg[4:0] writeRegInput, readReg0Input, readReg1Input;
   reg[31:0] writeRegDataInput;
+  reg regWriteInput;
   
   //OUTPUTS
+  wire [31:0] regData0Output;
   wire [31:0] regData1Output;
-  wire [31:0] regData2Output;
 /*---------END regFile---------*/
 
+
+
+
+/*-----------SignExtend-----------*/
+  //INPUTS
+  reg[15:0] signExtendInput;
+  
+  //OUTPUTS
+  wire[31:0] signExtendOutput
+/*-----------End SignExtend-----------*/
 
 
 
@@ -113,8 +137,8 @@ module Processor(instruction, clk, processorOut);
 
 /*-----------ALU-----------*/
   //INPUTS
-  reg [31:0] ALUPort1Input, 
-  reg [31:0] ALUPort2Input;
+  reg [31:0] ALUPort0Input, 
+  reg [31:0] ALUPort1Input;
   reg [3:0]  ALUControlInput;
   
   //OUTPUTS
@@ -144,23 +168,63 @@ module Processor(instruction, clk, processorOut);
 
 
 /*-----------RegFile-----------*/
-  regFile myRegFile(.readAddress0(readReg1), .readAddress1(readReg2), .writeAddress(writeReg), .writeData(writeRegData), .writeEnable(1'b1), .clk(clk), .readData0(regData1), .readData1(regData2));
+  regFile myRegFile(.readAddress0(readReg0Input), .readAddress1(readReg1Input), .writeAddress(writeRegInput), .writeData(writeRegDataInput), .writeEnable(regWriteInput), .clk(clk), .readData0(regData0Output), .readData1(regData1Output));
 /*---------END RegFile---------*/
 
 
 
 
 /*-----------ALU-----------*/
-  ALU myALU(.ALUControl(4'b0010), .DataIn0(regData1), .DataIn1(regData2), .DataOut(ALUResult), .ZeroOut(ALUZeroResult));
-  //why did we pass in 4'b0010 into ALU control? - chris
+  ALU myALU(.ALUControl(ALUControlInput), .DataIn0(ALUPort0Input), .DataIn1(ALUPort1Input), .DataOut(ALUResultOutput), .ZeroOut(ALUZeroResultOutput));
 /*---------END ALU---------*/
 
 
 
 
 /*-----------ALUControl-----------*/
-  //ALUControl myALUControl( .ALUOp(ALUFunctInput), .Funct(ALUOpInput), .Operation(ALUOperationOutput) );;
+  ALUControl myALUControl( .ALUOp(ALUFunctInput), .Funct(ALUOpInput), .Operation(ALUOperationOutput) );
 /*---------END ALUControl---------*/
+
+
+
+
+/*-----------MUXRegDst-----------*/
+  Two_to_one_MUX_5bit myMUXRegDst( .out(MUXRegDstOut), .A(MUXRegDstInputA), .B(MUXRegDstInputB), .sel(MUXRegDstControl) );
+  /*---------END MUXRegDst---------*/
+  
+  
+
+/*-----------MUXALUSrc-----------*/
+  Two_to_one_MUX myMUXALUSrc( .out(MUXALUSrcOutput), .A(MUXALUSrcInputA), .B(MUXALUSrcInputB), .sel(MUXALUSrcControl) );
+/*---------END MUXALUSrc---------*/
+
+
+  
+/*-----------MUXMemtoReg-----------*/
+  Two_to_one_MUX myMUXMemtoReg( .out(MUXMemtoRegOutput), .A(MUXMemtoRegInputA), .B(MUXMemtoRegInputB), .sel(MUXMemtoRegControl) );
+/*---------END MUXMemtoReg---------*/
+
+
+
+
+
+/*-----------MUXJump-----------*/
+  Two_to_one_MUX myMUXJump( .out(MUXJumpOutput), .A(MUXJumpInputA), .B(MUXJumpInputB), .sel(MUXJumpControl) );
+/*---------END MUXJump---------*/
+
+
+
+
+/*-----------MUXBranch-----------*/
+  Two_to_one_MUX myMUXBranch( .out(MUXBranchOutput), .A(MUXBranchInputA), .B(MUXBranchInputB), .sel(MUXBranchControl) );
+/*---------END MUXBranch---------*/
+
+
+
+
+/*-----------AND-----------*/
+  //
+/*---------END AND---------*/
 
   
 /*==========END MODULE INSTANCES==========*/
@@ -170,11 +234,27 @@ module Processor(instruction, clk, processorOut);
   
 /*============CONTROL CONNECTIONS============*/
 
-  MUXRegDstControl = controlOutRegDst;
-  MUXALUSrcControl = controlOutALUSrc;
-  MUXMemtoRegControl = controlOutMemtoReg;
-  MUXJumpControl = controlOutJump;
-
+  always@(controlOutRegDst, controlOutALUSrc, controlOutMemtoReg, controlOutRegWrite,  controlOutMemRead, controlOutMemWrite, controlOutBranch, controlOutJump, controlOutALUOp)
+  begin
+      /*-----------MUX control lines-----------*/
+      
+      MUXRegDstControl = controlOutRegDst;      //For all of these, we need to be careful about which MUX inputs should be 
+      MUXALUSrcControl = controlOutALUSrc;      //selected when.  Right now when sel is 0 the output follows B, and when
+      MUXMemtoRegControl = controlOutMemtoReg;  //sel is 1 the output follows A
+      MUXJumpControl = controlOutJump;
+      
+      /*-----------End MUX control lines-----------*/
+      
+      
+      /*-----------Other module control lines-----------*/
+      
+      regWriteInput = controlOutRegWrite;
+      mem_read = controlOutMemRead;
+      mem_write = controlOutMemWrite;
+      
+      /*-----------End Other module control lines-----------*/
+  end
+    
 /*============END CONTROL CONNECTIONS============*/
   
 
@@ -186,16 +266,24 @@ module Processor(instruction, clk, processorOut);
     /*-----------Instruction Stage-----------*/
 
     OpcodeInput = instruction[26 +: 6];
+    readReg1Input = instruction[21 +: 5];
+    readReg2Input = instruction[16 +: 5;
     MUXRegDstInputA = instruction[16 +: 5];
     MUXRegDstInputB = instruction[11 +: 5];
     #10 writeRegInput = MUXRegDstOut; //Need to delay to let MUX change output...not sure how much delay is needed (if any)
+    signExtendInput = instruction[0 +: 16];
+    ALUFunctInput = instruction[0 +: 6];
+    
     /*-----------End Instruction Stage-----------*/
 
     
     /*-----------Data Read Stage-----------*/
 
-    ALUPort1 = readReg1Input;
-    ALUPort2 = readReg2Input;
+    ALUPort0 = regData0Output;
+    MUXALUSrcInputA = regData1Output;
+    MUXALUSrcInputB = signExtendOutput;
+    #10 ALUPort1 = MUXALUSrcOutput;
+    ALUControlInput = ALUOperationOutput;
 
     /*-----------End Data Read Stage-----------*/
 
@@ -245,3 +333,24 @@ endmodule
 Input: Instr, clk
 Output: system print of the contents of the register file
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end

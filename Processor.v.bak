@@ -20,7 +20,7 @@ module Processor(instruction, clk, processorOut);
 
 /*-----------ControlUnit-----------*/
   //INPUTS
-  reg [0:4] OpcodeInput = instruction[26 +: 6];
+  reg [0:4] OpcodeInput;
  
   //OUTPUTS
   wire controlOutRegDst, controlOutALUSrc, controlOutMemtoReg, controlOutRegWrite,  controlOutMemRead, controlOutMemWrite, controlOutBranch, controlOutJump;
@@ -32,9 +32,9 @@ module Processor(instruction, clk, processorOut);
   
 /*-----------MUXRegDst-----------*/
   //INPUTS
-  reg [4:0] MUXRegDstInputA = instruction[16 +: 5];
-  reg [4:0] MUXRegDstInputB = instruction[11 +: 5];
-  reg MUXRegDstControl = RegDst;
+  reg [4:0] MUXRegDstInputA;
+  reg [4:0] MUXRegDstInputB;
+  reg MUXRegDstControl;
   
   //OUTPUTS
   wire [4:0] MUXRegDstOut;
@@ -46,7 +46,7 @@ module Processor(instruction, clk, processorOut);
   //INPUTS
   reg [31:0] MUXALUSrcInputA;
   reg [31:0] MUXALUSrcInputB;
-  reg MUXALUSrcControl = ALUSrc;
+  reg MUXALUSrcControl;
   
   //OUTPUTS
   wire [31:0] MUXALUSrcOutput;
@@ -59,7 +59,7 @@ module Processor(instruction, clk, processorOut);
   //INPUTS
   reg [31:0] MUXMemtoRegInputA;
   reg [31:0] MUXMemtoRegInputB;
-  reg MUXMemtoRegControl = MemtoReg;
+  reg MUXMemtoRegControl;
   
   //OUTPUTS
   wire [31:0] MUXMemtoRegOutput;
@@ -72,7 +72,7 @@ module Processor(instruction, clk, processorOut);
   //INPUTS
   reg [31:0] MUXJumpInputA;
   reg [31:0] MUXJumpInputB;
-  reg MUXJumpControl = Jump;
+  reg MUXJumpControl;
   
   //OUTPUTS
   wire [31:0] MUXJumpOutput;
@@ -87,20 +87,10 @@ module Processor(instruction, clk, processorOut);
   reg[31:0] writeRegDataInput;
   
   //OUTPUTS
-  wire [31:0] regData1, regData2;
+  wire [31:0] regData1Output;
+  wire [31:0] regData2Output;
 /*---------END regFile---------*/
-  
-  
 
-
-/*-----------ALU-----------*/
-  //INPUTS
-  reg [31:0] ALUPort1, ALUPort2;
-  
-  //OUTPUTS
-  wire [31:0] ALUResult;
-  wire ALUZeroResult; //Set to 1 if the result of the result of the ALU operation is '0'
-/*---------END ALU---------*/
 
 
 
@@ -110,13 +100,39 @@ module Processor(instruction, clk, processorOut);
   reg [32:1] instr_addr;
   reg [32:1] data_addr;
   reg [31:0] data_in;
-  reg mem_read;
-  reg mem_write;
+  reg        mem_read;
+  reg        mem_write;
   
   //OUTPUTS
   wire [31:0] instr;
   wire [31:0] data_out;
 /*---------END Memory---------*/
+
+
+
+
+/*-----------ALU-----------*/
+  //INPUTS
+  reg [31:0] ALUPort1Input, 
+  reg [31:0] ALUPort2Input;
+  reg [3:0]  ALUControlInput;
+  
+  //OUTPUTS
+  wire [31:0] ALUResultOutput;
+  wire        ALUZeroResultOutput; //Set to 1 if the result of the result of the ALU operation is '0'
+/*---------END ALU---------*/
+
+
+
+
+/*-----------ALUControl-----------*/
+  //INPUTS
+  reg [5:0] ALUFunctInput;
+  reg [1:0] ALUOpInput;
+  
+  //OUTPUTS
+  wire [3:0] ALUOperationOutput;
+/*---------END ALUControl---------*/
 
 
 /*==========END DECLERATIONS==========*/
@@ -136,13 +152,14 @@ module Processor(instruction, clk, processorOut);
 
 /*-----------ALU-----------*/
   ALU myALU(.ALUControl(4'b0010), .DataIn0(regData1), .DataIn1(regData2), .DataOut(ALUResult), .ZeroOut(ALUZeroResult));
+  //why did we pass in 4'b0010 into ALU control? - chris
 /*---------END ALU---------*/
 
 
 
 
 /*-----------ALUControl-----------*/
-  //ALUControl myALUControl(.ALUControl(
+  //ALUControl myALUControl( .ALUOp(ALUFunctInput), .Funct(ALUOpInput), .Operation(ALUOperationOutput) );;
 /*---------END ALUControl---------*/
 
   
@@ -153,7 +170,10 @@ module Processor(instruction, clk, processorOut);
   
 /*============CONTROL CONNECTIONS============*/
 
-
+  MUXRegDstControl = controlOutRegDst;
+  MUXALUSrcControl = controlOutALUSrc;
+  MUXMemtoRegControl = controlOutMemtoReg;
+  MUXJumpControl = controlOutJump;
 
 /*============END CONTROL CONNECTIONS============*/
   
@@ -165,8 +185,10 @@ module Processor(instruction, clk, processorOut);
   begin
     /*-----------Instruction Stage-----------*/
 
-
-
+    OpcodeInput = instruction[26 +: 6];
+    MUXRegDstInputA = instruction[16 +: 5];
+    MUXRegDstInputB = instruction[11 +: 5];
+    #10 writeRegInput = MUXRegDstOut; //Need to delay to let MUX change output...not sure how much delay is needed (if any)
     /*-----------End Instruction Stage-----------*/
 
     
