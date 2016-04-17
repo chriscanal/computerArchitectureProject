@@ -1,13 +1,19 @@
+/*  Every time an instruction is executed, update the register file variable by using the 
+    "writtenReg" and "writtenRegData" outputs of the processor.  Have the register file be in 
+    the monitor system call somehow (will probably have to make 32 different variables for each 
+    register. Syntax of monitor: $monitor ("format_string", par_1, par_2, ... );
+*/
+
 module Processor_tb;
-  reg [4:0] destReg, srcReg1, srcReg2;
+  reg [31:0] instruction
   reg clk;
 
-  wire [31:0] ALU_result;
+  wire [4:0] writtenRegAddress;
+  wire [31:0] writtenRegData;
   wire ALU_zero_result;
   wire [1:0] test;
 
   Processor myProcessor(destReg, srcReg1, srcReg2, clk, ALU_result, ALU_zero_result, test);
-  Memory myMemory
 
   initial begin
   clk = 0;

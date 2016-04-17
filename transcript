@@ -1,2 +1,51 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
 # Loading project Hw6
+# Break key hit
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 7 errors.
+# Compile of Processor_tb.v failed with 1 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# 23 compiles, 2 failed with 8 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 13 errors.
+# Compile of Processor_tb.v failed with 1 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# 23 compiles, 2 failed with 14 errors.

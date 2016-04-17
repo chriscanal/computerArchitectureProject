@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Modeltech_pe_edu_10.4a/examples
 vALU
-Z1 !s110 1460566782
+Z1 !s110 1460911883
 !i10b 1
 !s100 zch>mMcV=kMfK6RWh9o;f0
 IY;[JQ]ol:mSENfYaSTHzh0
@@ -23,7 +23,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1460566782.000000
+Z4 !s108 1460911883.000000
 !s107 C:/Modeltech_pe_edu_10.4a/examples/ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ALU.v|
 !s101 -O0
@@ -97,7 +97,7 @@ R4
 R5
 n@a@l@u@control_tb
 vAnd_gate
-Z7 !s110 1460566783
+Z7 !s110 1460911884
 !i10b 1
 !s100 PzE1Bl00`U>Ia@_z4oFfJ1
 I0750VEaA=8bLfinJQgb]62
@@ -111,7 +111,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1460566783.000000
+Z8 !s108 1460911884.000000
 !s107 C:/Modeltech_pe_edu_10.4a/examples/And_gate.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/And_gate.v|
 !s101 -O0
@@ -162,7 +162,7 @@ r1
 !i113 1
 R5
 vcontrolUnit
-Z9 !s110 1460566781
+R1
 !i10b 1
 !s100 l91I0zVLBXiT]kl8DT8c`2
 IjQaf0K?kEOJULBl@N>9H32
@@ -176,7 +176,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1460566781.000000
+R4
 !s107 C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v|
 !s101 -O0
@@ -184,7 +184,7 @@ Z10 !s108 1460566781.000000
 R5
 ncontrol@unit
 vcontrolUnit_tb
-R9
+R1
 !i10b 1
 !s100 Vh>a26@4:Xai`ShABaVzD0
 IzzY[gKg_IH0DFeRdRogFj2
@@ -198,7 +198,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/controlUnit_tb.v|
 !s101 -O0
@@ -206,13 +206,13 @@ R10
 R5
 ncontrol@unit_tb
 vMemory
-Z11 !s110 1460566784
+R7
 !i10b 1
 !s100 RE`J^la5MEU<`zla1Recm0
 ITTJ0dJ8iKY^PMh3R=?Y[_3
 R2
 R0
-w1459018281
+w1460910903
 8C:/Modeltech_pe_edu_10.4a/examples/memory.v
 FC:/Modeltech_pe_edu_10.4a/examples/memory.v
 L0 8
@@ -220,7 +220,7 @@ R3
 r1
 !s85 0
 31
-Z12 !s108 1460566784.000000
+R8
 !s107 C:/Modeltech_pe_edu_10.4a/examples/memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/memory.v|
 !s101 -O0
@@ -228,7 +228,7 @@ Z12 !s108 1460566784.000000
 R5
 n@memory
 vmy_fsm_tb
-Z13 !s110 1458083040
+Z9 !s110 1458083040
 !i10b 1
 !s100 mi7]<QMUA9@>`YS_dfUAB2
 IV6_@mCmn2DVKj[V_8HS^Y3
@@ -249,7 +249,7 @@ r1
 !i113 1
 R5
 vmyfsm
-R13
+R9
 !i10b 1
 !s100 7TAiD8>T@L2V9^^jK?75O0
 Ie?KS__GGW<Ef1Z@M>cR:63
@@ -292,7 +292,7 @@ r1
 R5
 n@processor
 vProcessor_tb
-R11
+!s110 1460566784
 !i10b 1
 !s100 dOZGd9gm@`1G:ZDh`8_9R2
 I:ij:Q8h@XY6J2?7m9o8Fo2
@@ -306,7 +306,7 @@ R3
 r1
 !s85 0
 31
-R12
+!s108 1460566784.000000
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v|
 !s101 -O0
@@ -314,7 +314,7 @@ R12
 R5
 n@processor_tb
 vreg32
-Z14 !s110 1460566780
+R1
 !i10b 1
 !s100 F:cC<;k2;NY_I>PZecN;d2
 I^K[8kb^^H:@`InOS=A_6c2
@@ -328,30 +328,30 @@ R3
 r1
 !s85 0
 31
-Z15 !s108 1460566780.000000
+R4
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit.v|
 !s101 -O0
 !i113 1
 R5
 vreg32_tb
-R9
+R1
 !i10b 1
 !s100 X`D^dS2?=Kc35Q[>e^n291
 ISzL`jG[amMhG9Md8O:Zej3
 R2
 R0
 w1460000052
-Z16 8C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
-Z17 FC:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
+Z10 8C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
+Z11 FC:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v
 L0 1
 R3
 r1
 !s85 0
 31
-R15
-Z18 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
-Z19 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
+R4
+Z12 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_32_bit_tb.v|
 !s101 -O0
 !i113 1
 R5
@@ -363,28 +363,28 @@ I7Mo=_iM0fOU=WY?YkN[JW0
 R2
 R0
 w1458268899
-R16
-R17
+R10
+R11
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1458268903.000000
-R18
-R19
+R12
+R13
 !s101 -O0
 !i113 1
 R5
 n@reg32_tb
 vregFile
-R9
+R1
 !i10b 1
-!s100 TFL<dhcQ:`H9:fN50n<:l0
-IJ^VS_<2lhnIA^mJJH78@12
+!s100 GO4YAgYiNDAf4A8UZVaZ`0
+I5HgEOPd7REbCZN`lPmPeH0
 R2
 R0
-w1460001081
+w1460911177
 8C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
 FC:/Modeltech_pe_edu_10.4a/examples/Reg_File.v
 L0 1
@@ -392,7 +392,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_File.v|
 !s101 -O0
@@ -400,7 +400,7 @@ R10
 R5
 nreg@file
 vregFile_tb
-R9
+R1
 !i10b 1
 !s100 f1@n3E0fKicHlSD]ddLBX3
 IWORBHWgJZHZ=B9zLj;7=M1
@@ -414,7 +414,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Reg_file_tb.v|
 !s101 -O0
@@ -510,7 +510,7 @@ R8
 R5
 n@sign_extend_tb
 vTwo_to_one_MUX
-R14
+Z14 !s110 1460911882
 !i10b 1
 !s100 Jg<Pl_Q_2H<bUB<T7dl;d0
 IPzR9_Ck1g:Z_^[If3lTD=2
@@ -524,7 +524,7 @@ R3
 r1
 !s85 0
 31
-R15
+Z15 !s108 1460911882.000000
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX.v|
 !s101 -O0
@@ -532,7 +532,7 @@ R15
 R5
 n@two_to_one_@m@u@x
 vTwo_to_one_MUX_5bit
-R11
+R7
 !i10b 1
 !s100 ;]CYn3oMkcN^dJEC>Rl[o3
 I@H?c8B]4QXGEzmDiJiOzU3
@@ -546,7 +546,7 @@ R3
 r1
 !s85 0
 31
-R12
+R8
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit.v|
 !s101 -O0
@@ -554,7 +554,7 @@ R12
 R5
 n@two_to_one_@m@u@x_5bit
 vTwo_to_one_MUX_5bit_tb
-R11
+!s110 1460911885
 !i10b 1
 !s100 AETG29YVTz?ekWbPMA=k02
 IX;B?afe[:O14?hIQC>2HP0
@@ -568,7 +568,7 @@ R3
 r1
 !s85 0
 31
-R12
+R8
 !s107 C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_5bit_tb.v|
 !s101 -O0

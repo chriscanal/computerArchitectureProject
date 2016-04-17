@@ -6,12 +6,12 @@ module regFile (readAddress0, readAddress1, writeAddress, writeData, writeEnable
 
   reg [31:0] rF [31:0];
 
-  initial 
+  initial //Set register to hold all 0s
   begin
-    rF[5'b01000] = 32'b00000000000000000000000000000001;
-    rF[5'b01001] = 32'b00000000000000000000000000000001;
-    rF[5'b01010] = 32'b00000000000000000000000000000000;
-    rF[5'b01011] = 32'b00000000000000000000000000000000;
+    rF[5'b00000] = 32'b00000000000000000000000000000000;
+    rF[5'b00001] = 32'b00000000000000000000000000000000;
+    rF[5'b00010] = 32'b00000000000000000000000000000000;
+    rF[5'b00011] = 32'b00000000000000000000000000000000;
   end
   
   always @ (readAddress0 or readAddress1)
@@ -19,6 +19,7 @@ module regFile (readAddress0, readAddress1, writeAddress, writeData, writeEnable
       readData0 = rF[readAddress0];
       readData1 = rF[readAddress1];
     end
+
   always @ (posedge clk)
     begin
       if (writeEnable)
