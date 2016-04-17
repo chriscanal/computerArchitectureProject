@@ -5,13 +5,46 @@
 */
 
 module Processor_tb;
+
+/*============DECLERATIONS============*/
+
   reg [31:0] instruction
   reg clk;
 
   wire [4:0] writtenRegAddress;
   wire [31:0] writtenRegData;
 
-  Processor myProcessor(instruction, clk, writtenRegAddress, writtenRegData);
+/*============END DECLERATIONS============*/
+
+/*-----------Memory-----------*/
+/*-----------End Memory-----------*/
+
+/*============MODULE INSTANCES============*/
+
+Processor myProcessor(
+	.clk(clk), 
+	.instruction(instruction), 
+	memoryDataOutOutput_processorInput, 
+		writtenRegAddressOutput, 
+		writtenRegDataOutput, 
+		memoryInstAddrInput_processorOutput, 
+		memoryDataAddrInput_processorOutput, 
+		memoryDataInInput_processorOutput, 
+		memoryMemReadInput_processorOutput, 
+		memoryMemWriteInput_processorOutput
+);
+
+Memory myMemory(
+    inst_addr,
+    instr,
+	data_addr,
+	data_in,
+	mem_read,
+	mem_write,
+	data_out
+);
+
+/*============END MODULE INSTANCES============*/
 
   initial begin
   clk = 0;
