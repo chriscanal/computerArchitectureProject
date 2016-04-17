@@ -82,6 +82,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Two_to_one_MUX_5bit
 
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_jumpAddress.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_jumpAddress.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Shift_left_two_jumpAddress
+
+Top level modules:
+	Shift_left_two_jumpAddress
+
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Two_to_one_MUX_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Two_to_one_MUX_tb
@@ -89,15 +96,7 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Two_to_one_MUX_tb
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v {0 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Processor_tb
-** Error: (vlog-13069) C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(9): near "reg": syntax error, unexpected reg, expecting ';' or ','.
-
-** Error: (vlog-13069) C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(22): near "00000": syntax error, unexpected INTEGER NUMBER, expecting ';'.
-
-
-} {4.0 5.0 6.0 7.0} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Sign_extend_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Sign_extend_tb
 
@@ -117,6 +116,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	Shift_left_two_tb
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_jumpAddress_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two_jumpAddress_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Shift_left_two_jumpAddress_tb
+
+Top level modules:
+	Shift_left_two_jumpAddress_tb
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/ALUControl_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
