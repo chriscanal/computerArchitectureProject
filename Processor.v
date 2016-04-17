@@ -8,7 +8,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 
 /*-----------ALU-----------*/
   //INPUTS
-  reg [31:0] ALUPort0Input, 
+  reg [31:0] ALUPort0Input; 
   reg [31:0] ALUPort1Input;
   reg [3:0]  ALUControlInput;
   
@@ -46,7 +46,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 
 /*-----------BranchAdd-----------*/
   //INPUTS
-  reg [31:0] branchAddPort0Input, 
+  reg [31:0] branchAddPort0Input; 
   reg [31:0] branchAddPort1Input;
   reg [3:0]  branchAddControlInput;
   
@@ -195,7 +195,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
   
 /*-----------PCAdd-----------*/
   //INPUTS
-  reg [31:0] PCAddPort0Input, 
+  reg [31:0] PCAddPort0Input; 
   reg [31:0] PCAddPort1Input;
   reg [3:0]  PCAddControlInput;
   
@@ -364,7 +364,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 /*============CONTROL CONNECTIONS============*/
 
 
-  always@(controlOutRegDst, controlOutALUSrc, controlOutMemtoReg, controlOutRegWrite,  controlOutMemRead, controlOutMemWrite, controlOutBranch, controlOutJump, controlOutALUOp)
+  always@(controlRegDstOutput, controlALUSrcOutput, controlMemtoRegOutput, controlRegWriteOutput,  controlMemReadOutput, controlMemWriteOutput, controlBranchOutput, controlJumpOutput, controlALUOpOutput)
   begin
       /*-----------MUX control lines-----------*/
       
@@ -406,14 +406,14 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
     /*-----------Data Read Stage-----------*/
 
     controlOpcodeInput = instruction[26 +: 6];
-    readReg1Input = instruction[21 +: 5];
-    readReg2Input = instruction[16 +: 5];
+    regFileReadReg0Input = instruction[21 +: 5];
+    regFileReadReg1Input = instruction[16 +: 5];
     MUXRegDstInputB = instruction[16 +: 5];
     MUXRegDstInputA = instruction[11 +: 5];
     #1; 
-    writeRegInput = MUXRegDstOut; //Need to delay to let MUX change output...not sure how much delay is needed (if any)
+    regFileWriteRegInput = MUXRegDstOut; //Need to delay to let MUX change output...not sure how much delay is needed (if any)
     signExtendInput = instruction[0 +: 16];
-    ALUFunctInput = instruction[0 +: 6];
+    ALUControlFunctInput = instruction[0 +: 6];
 
     /*-----------End Data Read Stage-----------*/
     
@@ -421,12 +421,12 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
     
     /*-----------Execution Stage-----------*/
 
-    ALUPort0Input= regData0Output;
-    MUXALUSrcInputB = regData1Output;
+    ALUPort0Input= regFileRegData0Output;
+    MUXALUSrcInputB = regFileRegData1Output;
     MUXALUSrcInputA = signExtendOutput;
     #1; 
     ALUPort1Input= MUXALUSrcOutput;
-    ALUControlInput = ALUOperationOutput;
+    ALUControlInput = controlALUOpOutput;
 
     /*-----------End Execution Stage-----------*/
     
@@ -435,7 +435,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
     /*-----------Data Memory Stage-----------*/
 
     memoryDataAddrInput = ALUResultOutput;
-    memoryDataInInput = regData0Output;
+    memoryDataInInput = regFileRegData0Output;
     
     /*-----------End Data Memory Stage-----------*/
 
@@ -459,10 +459,10 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 
 
   /*   Set processorOut equal to 1   */
-  always@(writeRegDataInput)
+  always@(regFileWriteRegDataInput)
   begin
-    writtenRegAddressOutput = regWriteInput;
-    writtenRegDataOutput = writeRegDataInput;
+    writtenRegAddressOutput = regFileRegWriteInput;
+    writtenRegDataOutput = regFileWriteRegDataInput;
   end
 
 

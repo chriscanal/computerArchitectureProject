@@ -19,7 +19,7 @@ module Processor_tb;
   always #50clk=~clk; /* 10MHz clock (50*1ns*2) with 50% duty-cycle */
 
   initial begin
-  
+  instruction = 32'b100011 00000 00001
 
   #100 $finish;  //stop simulation
   
