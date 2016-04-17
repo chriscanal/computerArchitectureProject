@@ -1,7 +1,17 @@
 // Processor that can perform lw
 
-module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput);
-
+module Processor(
+	clk, 
+	instruction, 
+	memoryDataOutOutput_processorInput, 
+		writtenRegAddressOutput, 
+		writtenRegDataOutput, 
+		memoryInstAddrInput_processorOutput, 
+		memoryDataAddrInput_processorOutput, 
+		memoryDataInInput_processorOutput, 
+		memoryMemReadInput_processorOutput, 
+		memoryMemWriteInput_processorOutput
+);
 
 /*============DECLERATIONS============*/
 
@@ -99,21 +109,6 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 
 
   
-/*-----------Memory-----------*/
-  //INPUTS
-  reg [31:0] memoryInstAddrInput;
-  reg [31:0] memoryDataAddrInput;
-  reg [31:0] memoryDataInInput;
-  reg        memoryMemReadInput;
-  reg        memoryMemWriteInput;
-  
-  //OUTPUTS
-  wire [31:0] memoryInstrOutput;
-  wire [31:0] memoryDataOutOutput;
-/*---------END Memory---------*/
-
-
-  
   
 /*-----------MUXALUSrc-----------*/
   //INPUTS
@@ -183,11 +178,27 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 /*-----------PROCESSOR-----------*/
   //INPUTS  
   input clk;
-  input [31:0] instruction;
+
+  /*-----------Outputs from Memory Instance in test bench-----------*/
+ 
+    input [31:0] instruction;
+    input [31:0] memoryDataOutOutput_processorInput;
+
+  /*---------End Outputs from Memory Instance in test bench---------*/
   
   //OUTPUTS
   output reg [4:0] writtenRegAddressOutput ;
   output reg [31:0] writtenRegDataOutput;
+
+  /*-----------Inputs to Memory Instance in test bench-----------*/
+
+    output reg [31:0] memoryInstAddrInput_processorOutput;  // This is the NEXT instructon address
+    output reg [31:0] memoryDataAddrInput_processorOutput;  
+    output reg [31:0] memoryDataInInput_processorOutput;
+    output reg        memoryMemReadInput_processorOutput;
+    output reg        memoryMemWriteInput_processorOutput;
+  
+  /*---------End Inputs to Memory Instance in test bench---------*/
 /*---------END PROCESSOR---------*/
 
 
@@ -288,13 +299,6 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
 
 
 
-/*-----------Memory-----------*/
-  Memory myMemory( .inst_addr(memoryInstAddrInput), .instr(memoryInstrOutput), .data_addr(memoryDataAddrInput), .data_in(memoryDataInInput), .mem_read(memoryMemReadInput), .mem_write(memoryMemWriteInput), .data_out(memoryDataOutOutput) );
-/*---------END Memory---------*/
-
-
-
-
 /*-----------MUXALUSrc-----------*/
   Two_to_one_MUX myMUXALUSrc( .out(MUXALUSrcOutput), .A(MUXALUSrcInputA), .B(MUXALUSrcInputB), .sel(MUXALUSrcControlInput) );
 /*---------END MUXALUSrc---------*/
@@ -380,8 +384,8 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
       /*-----------Other module control lines-----------*/
       
       regFileRegWriteInput = controlRegWriteOutput;
-      memoryMemReadInput = controlMemReadOutput;
-      memoryMemWriteInput = controlMemWriteOutput;
+      memoryMemReadInput_processorOutput = controlMemReadOutput;
+      memoryMemWriteInput_processorOutput = controlMemWriteOutput;
       ALUControlOpInput = controlALUOpOutput;
       
       /*-----------End Other module control lines-----------*/
@@ -434,8 +438,8 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
     
     /*-----------Data Memory Stage-----------*/
 
-    memoryDataAddrInput = ALUResultOutput;
-    memoryDataInInput = regFileRegData0Output;
+    memoryDataAddrInput_processorOutput = ALUResultOutput;
+    memoryDataInInput_processorOutput = regFileRegData0Output;
     
     /*-----------End Data Memory Stage-----------*/
 
@@ -444,7 +448,7 @@ module Processor(instruction, clk, writtenRegAddressOutput, writtenRegDataOutput
     /*-----------Write Back Stage-----------*/
 
     MUXMemtoRegInputB = ALUResultOutput;
-    MUXMemtoRegInputA = memoryDataOutOutput;
+    MUXMemtoRegInputA = memoryDataOutOutput_processorInput;
     #1; 
     regFileWriteRegDataInput = MUXMemtoRegOutput;
 
