@@ -1,6 +1,17 @@
 // Processor that can perform lw
 
-module Processor(clk, instruction, memoryDataOutOutput_processorInput, writtenRegAddressOutput, writtenRegDataOutput, memoryInstAddrInput_processorOutput, memoryDataAddrInput_processorOutput, memoryDataInInput_processorOutput, memoryMemReadInput_processorOutput, memoryMemWriteInput_processorOutput);
+module Processor(
+	clk, 
+	instruction, 
+	memoryDataOutOutput_processorInput, 
+		writtenRegAddressOutput, 
+		writtenRegDataOutput, 
+		memoryInstAddrInput_processorOutput, 
+		memoryDataAddrInput_processorOutput, 
+		memoryDataInInput_processorOutput, 
+		memoryMemReadInput_processorOutput, 
+		memoryMemWriteInput_processorOutput
+);
 
 /*============DECLERATIONS============*/
 

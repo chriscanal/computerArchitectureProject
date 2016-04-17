@@ -1,16 +1,16 @@
 // Processor that can perform lw
 
 module Processor(
-	clk, 
-	instruction, 
-	memoryDataOutOutput_processorInput, 
-		writtenRegAddressOutput, 
-		writtenRegDataOutput, 
-		memoryInstAddrInput_processorOutput, 
-		memoryDataAddrInput_processorOutput, 
-		memoryDataInInput_processorOutput, 
-		memoryMemReadInput_processorOutput, 
-		memoryMemWriteInput_processorOutput
+    clk, 
+    instruction, 
+    memoryDataOutOutput_processorInput, 
+        writtenRegAddressOutput, 
+        writtenRegDataOutput, 
+        memoryInstAddrInput_processorOutput, 
+        memoryDataAddrInput_processorOutput, 
+        memoryDataInInput_processorOutput, 
+        memoryMemReadInput_processorOutput, 
+        memoryMemWriteInput_processorOutput
 );
 
 /*============DECLERATIONS============*/
@@ -100,7 +100,8 @@ module Processor(
 
 /*-----------JumpShiftLeft-----------*/
   //INPUTS
-  reg[31:0] jumpShiftLeftInput;
+  reg[31:0] jumpShiftLeftInstructionInput;
+  reg[31:0] jumpShiftLeftPCInput;
   
   //OUTPUTS
   wire[31:0] jumpShifLeftOutput;
@@ -293,7 +294,7 @@ module Processor(
 
 
 /*-----------JumpShiftLeft-----------*/
-  Shift_left_two myJumpShiftLeft( .out(jumpShifLeftOutput), .in(jumpShiftLeftInput) );
+  Shift_left_two myJumpShiftLeft( .out(jumpShifLeftOutput), .instructionIn(jumpShiftLeftInstructionInput), .PCIn(jumpShiftLeftPCInput) );
 /*---------END JumpShiftLeft---------*/
 
 
@@ -397,15 +398,29 @@ module Processor(
 
 
 /*============DATAPATH CONNECTIONS============*/
+  initial begin
+    MUXJumpInputA = 32'b00000000000000000000101110111000;
+    MUXJumpInputB = 32'b00000000000000000000101110111000;
+    MUXJumpControlInput = 1'b0;
+    //Set initial value of instruction address to 3000
+    //( .out(MUXJumpOutput), .A(MUXJumpInputA), .B(MUXJumpInputB), .sel(MUXJumpControlInput) );
+  end
+  
+
+  
   always@(posedge clk)
   begin
+    #1;
     /*-----------Instruction Stage-----------*/
-
-    // Getting instruction from instruction address will be here
+    
+    memoryInstAddrInput_processorOutput = MUXJumpOutput;
+    PCAddPort0Input = MUXJumpOutput;
+    PCAddPort1Input = 32'b00000000000000000000000000000100;
+    PCAddControlInput = 4'b0010; 
     
     /*-----------End Instruction Stage-----------*/
 
-    
+    #1;
     
     /*-----------Data Read Stage-----------*/
 
@@ -418,19 +433,49 @@ module Processor(
     regFileWriteRegInput = MUXRegDstOut; //Need to delay to let MUX change output...not sure how much delay is needed (if any)
     signExtendInput = instruction[0 +: 16];
     ALUControlFunctInput = instruction[0 +: 6];
+    jumpShiftLeftInstructionInput = instruction;
+    jumpShiftLeftPCInput = PCAddResultOutput;
+ 
 
     /*-----------End Data Read Stage-----------*/
     
     #1; //Give sign extend time to execute
     
     /*-----------Execution Stage-----------*/
-
+    
+    
     ALUPort0Input= regFileRegData0Output;
     MUXALUSrcInputB = regFileRegData1Output;
     MUXALUSrcInputA = signExtendOutput;
-    #1; 
+    #1;
+    //AlU 
     ALUPort1Input= MUXALUSrcOutput;
     ALUControlInput = controlALUOpOutput;
+    branchShiftLeftInput = signExtendOutput;
+    #1;
+    //branch Adder
+    branchAddControlInput = 4'b0010;
+    branchAddPort0Input = PCAddResultOutput;
+    branchAddPort1Input = branchShifLeftOutput;
+    //( .ALUControl(branchAddControlInput), .DataIn0(branchAddPort0Input), .DataIn1(branchAddPort1Input), .DataOut(branchAddResultOutput), .ZeroOut(branchAddZeroResultOutput) );
+    #1;
+    //and gate
+    andGateInput1 = controlBranchOutput;
+    andGateInput2 = ALUZeroResultOutput;
+    //( .out(andGateOutput), .in1(andGateInput1), .in2(andGateInput2) )
+    #1;
+    //Branch Mux
+    MUXBranchInputA = PCAddResultOutput;
+    MUXBranchInputB = branchAddResultOutput;
+    MUXBranchControlInput = andGateOutput;
+    //( .out(MUXBranchOutput), .A(MUXBranchInputA), .B(MUXBranchInputB), .sel(MUXBranchControlInput) )
+    #1;
+    //Jump Mux
+    MUXJumpInputA = jumpShifLeftOutput;
+    MUXJumpInputB = MUXBranchOutput;
+    MUXJumpControlInput = controlJumpOutput;
+    //( .out(MUXJumpOutput), .A(MUXJumpInputA), .B(MUXJumpInputB), .sel(MUXJumpControlInput) );
+   
 
     /*-----------End Execution Stage-----------*/
     
@@ -462,7 +507,7 @@ module Processor(
 /*============SET OUTPUT OF PROCESSOR TO WRITTEN REGISTER ============*/
 
 
-  /*   Set processorOut equal to 1   */
+  /*   Set processor output equal to the register that was changed this instruction cycle   */
   always@(regFileWriteRegDataInput)
   begin
     writtenRegAddressOutput = regFileRegWriteInput;
