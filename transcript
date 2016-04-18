@@ -1785,3 +1785,1466 @@ run
 # Hello2
 # Hello1
 # Hello1
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+toggle disable  \
+sim:/Processor_tb/displayRegisterFile
+# ** Error: (vsim-3451) Toggle checking is not enabled.
+# 
+add wave -position insertpoint  \
+sim:/Processor_tb/instruction
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 12:35:54 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlfts70hh0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfts70hh0
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+run
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor.v(417)
+#    Time: 30501 ns  Iteration: 0  Instance: /Processor_tb/myProcessor
+# 1
+# Break in Module Processor at C:/Modeltech_pe_edu_10.4a/examples/Processor.v line 417
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 12:40:52 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/clk \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/displayRegisterFile
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftrk6vrz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrk6vrz
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+clear
+# invalid command name "clear"
+clear all
+# invalid command name "clear"
+clearall
+# invalid command name "clearall"
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 1 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 12:56:09 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/clk \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/displayRegisterFile
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftt6fgw4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftt6fgw4
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+add wave -position insertpoint /Processor_tb/myProcessor/myPCAdd/ALUControl
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor.v(417)
+#    Time: 30501 ns  Iteration: 0  Instance: /Processor_tb/myProcessor
+# 1
+# Break in Module Processor at C:/Modeltech_pe_edu_10.4a/examples/Processor.v line 417
+add wave -position insertpoint  \
+sim:/Processor_tb/myProcessor/controlALUOpOutput
+run
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 13:25:51 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -position insertpoint /Processor_tb/myProcessor/controlALUOpOutput
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlfta086wr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfta086wr
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+add wave -position insertpoint  \
+sim:/Processor_tb/instruction
+add wave  \
+sim:/Processor_tb/instruction
+run
+# ** Note: $finish    : C:/Modeltech_pe_edu_10.4a/examples/Processor.v(417)
+#    Time: 30501 ns  Iteration: 0  Instance: /Processor_tb/myProcessor
+# 1
+# Break in Module Processor at C:/Modeltech_pe_edu_10.4a/examples/Processor.v line 417
+run
+add wave  \
+sim:/Processor_tb/myProcessor/ALUPort0Input \
+sim:/Processor_tb/myProcessor/ALUPort1Input \
+sim:/Processor_tb/myProcessor/ALUControlInput \
+sim:/Processor_tb/myProcessor/ALUResultOutput \
+sim:/Processor_tb/myProcessor/ALUZeroResultOutput \
+sim:/Processor_tb/myProcessor/ALUControlFunctInput \
+sim:/Processor_tb/myProcessor/ALUControlOpInput \
+sim:/Processor_tb/myProcessor/ALUControlOperationOutput \
+sim:/Processor_tb/myProcessor/andGateInput1 \
+sim:/Processor_tb/myProcessor/andGateInput2 \
+sim:/Processor_tb/myProcessor/andGateOutput \
+sim:/Processor_tb/myProcessor/branchAddPort0Input \
+sim:/Processor_tb/myProcessor/branchAddPort1Input \
+sim:/Processor_tb/myProcessor/branchAddControlInput \
+sim:/Processor_tb/myProcessor/branchAddResultOutput \
+sim:/Processor_tb/myProcessor/branchAddZeroResultOutput \
+sim:/Processor_tb/myProcessor/branchShiftLeftInput \
+sim:/Processor_tb/myProcessor/branchShifLeftOutput \
+sim:/Processor_tb/myProcessor/controlOpcodeInput \
+sim:/Processor_tb/myProcessor/controlALUSrcOutput \
+sim:/Processor_tb/myProcessor/controlBranchOutput \
+sim:/Processor_tb/myProcessor/controlJumpOutput \
+sim:/Processor_tb/myProcessor/controlMemtoRegOutput \
+sim:/Processor_tb/myProcessor/controlMemReadOutput \
+sim:/Processor_tb/myProcessor/controlMemWriteOutput \
+sim:/Processor_tb/myProcessor/controlRegWriteOutput \
+sim:/Processor_tb/myProcessor/controlRegDstOutput \
+sim:/Processor_tb/myProcessor/controlALUOpOutput \
+sim:/Processor_tb/myProcessor/jumpShiftLeftInstructionInput \
+sim:/Processor_tb/myProcessor/jumpShiftLeftPCInput \
+sim:/Processor_tb/myProcessor/jumpShifLeftOutput \
+sim:/Processor_tb/myProcessor/MUXALUSrcInputA \
+sim:/Processor_tb/myProcessor/MUXALUSrcInputB \
+sim:/Processor_tb/myProcessor/MUXALUSrcControlInput \
+sim:/Processor_tb/myProcessor/MUXALUSrcOutput \
+sim:/Processor_tb/myProcessor/MUXBranchInputA \
+sim:/Processor_tb/myProcessor/MUXBranchInputB \
+sim:/Processor_tb/myProcessor/MUXBranchControlInput \
+sim:/Processor_tb/myProcessor/MUXBranchOutput \
+sim:/Processor_tb/myProcessor/MUXJumpInputA \
+sim:/Processor_tb/myProcessor/MUXJumpInputB \
+sim:/Processor_tb/myProcessor/MUXJumpControlInput \
+sim:/Processor_tb/myProcessor/MUXJumpOutput \
+sim:/Processor_tb/myProcessor/MUXMemtoRegInputA \
+sim:/Processor_tb/myProcessor/MUXMemtoRegInputB \
+sim:/Processor_tb/myProcessor/MUXMemtoRegControlInput \
+sim:/Processor_tb/myProcessor/MUXMemtoRegOutput \
+sim:/Processor_tb/myProcessor/MUXRegDstInputA \
+sim:/Processor_tb/myProcessor/MUXRegDstInputB \
+sim:/Processor_tb/myProcessor/MUXRegDstControlInput \
+sim:/Processor_tb/myProcessor/MUXRegDstOut \
+sim:/Processor_tb/myProcessor/clk \
+sim:/Processor_tb/myProcessor/instruction \
+sim:/Processor_tb/myProcessor/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/myProcessor/writtenRegAddressOutput \
+sim:/Processor_tb/myProcessor/writtenRegDataOutput \
+sim:/Processor_tb/myProcessor/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/myProcessor/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/myProcessor/memoryDataInInput_processorOutput \
+sim:/Processor_tb/myProcessor/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/myProcessor/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/myProcessor/PCAddPort0Input \
+sim:/Processor_tb/myProcessor/PCAddPort1Input \
+sim:/Processor_tb/myProcessor/PCAddControlInput \
+sim:/Processor_tb/myProcessor/PCAddResultOutput \
+sim:/Processor_tb/myProcessor/PCAddZeroResultOutput \
+sim:/Processor_tb/myProcessor/regFileWriteRegInput \
+sim:/Processor_tb/myProcessor/regFileReadReg0Input \
+sim:/Processor_tb/myProcessor/regFileReadReg1Input \
+sim:/Processor_tb/myProcessor/regFileWriteRegDataInput \
+sim:/Processor_tb/myProcessor/regFileRegWriteInput \
+sim:/Processor_tb/myProcessor/regFileRegData0Output \
+sim:/Processor_tb/myProcessor/regFileRegData1Output \
+sim:/Processor_tb/myProcessor/signExtendInput \
+sim:/Processor_tb/myProcessor/signExtendOutput
+run
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 13:31:29 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftit8zeq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftit8zeq
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 13:42:06 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft0qtim4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft0qtim4
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 13:51:21 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft4zx64n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft4zx64n
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 14:02:52 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft6xmv9s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6xmv9s
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 14:18:04 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftr14wmt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftr14wmt
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 14:34:33 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftw02via".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw02via
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, x, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 1, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 8, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 2 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 2 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 2 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 2 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 1 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 14:57:03 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftr31vqm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftr31vqm
+# 
+run
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, x, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 1, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 8, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: 2863311530 = '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 4 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 4 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 15:11:44 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft19731v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft19731v
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, x, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 1, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 8, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 12, 12, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 15:13:01 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftz5xedk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftz5xedk
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, x, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 11, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 12, 11, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 12, 1, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 12, 12, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 1, 0, 0, 1, 1, 12, 12, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 12, 12, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 12, 12, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 12, 12, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 8, 1, 12, 12, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8}
+# A time value could not be extracted from the current line
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 15:24:21 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftwcr9m3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftwcr9m3
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 12, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 15:31:03 on Apr 18,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlfttjg8ra".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfttjg8ra
+# 
+add wave -position insertpoint /Processor_tb/myProcessor/myRegFile/rF
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 11, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 12, 12, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 9, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 4, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 12, 12, 11, 8, 8, 0, 0, 0, 0, 0, 0, 0, 8}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.

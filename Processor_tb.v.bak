@@ -44,6 +44,8 @@ module Processor_tb;
   /*-----------Register Output Monitor-------------*/
 
   reg [31:0] displayRegisterFile [31:0];
+  reg [6:0] i;
+  reg [31:0] regNumbers;
 
   /*-----------End Register Output Monitor-----------*/
 
@@ -85,7 +87,6 @@ Memory myMemory(
   /*-----------Set memory inputs equal to processor outputs-----------*/
   always@(memoryInstAddrInput_processorOutput or memoryDataAddrInput_processorOutput or memoryDataInInput_processorOutput or memoryMemReadInput_processorOutput or memoryMemWriteInput_processorOutput)
   begin
-    $display("Hello");
     memoryInstAddrInput = memoryInstAddrInput_processorOutput;
     memoryDataAddrInput = memoryDataAddrInput_processorOutput;
     memoryDataInInput = memoryDataInInput_processorOutput;
@@ -98,7 +99,6 @@ Memory myMemory(
   /*-----------Set processor inputs equal to memory outputs-----------*/
   always@(memoryInstOutOutput or memoryDataOutOutput)
   begin
-    $display("Hello");
     instruction = memoryInstOutOutput;
     memoryDataOutOutput_processorInput = memoryDataOutOutput;
   end
@@ -120,9 +120,11 @@ Memory myMemory(
 
 /*============MONITOR CHANGED REGISTERS============*/
   /*-----------Update contents of displayRegisterFile -----------*/
-  always@(writtenRegAddressOutput or writtenRegDataOutput)
+  always@(posedge clk)
   begin
     displayRegisterFile[writtenRegAddressOutput] = writtenRegDataOutput;
+    $display("
+    $display("Current register contents: %p", displayRegisterFile);
   end
   /*-----------Update contents of displayRegisterFile -----------*/
 
@@ -162,9 +164,17 @@ Memory myMemory(
     displayRegisterFile[5'b11101] = 32'b00000000000000000000000000000000;
     displayRegisterFile[5'b11110] = 32'b00000000000000000000000000000000;
     displayRegisterFile[5'b11111] = 32'b00000000000000000000000000000000;
+    
+    //Set contents of registerNumbers
+    i = 0;
+    while( i < 32 )
+    begin
+      regNumbers[i] = i;
+      i = i + 1;
+    end
 
     //Set up displayRegisterFile to show its contents every time they are changed
-    $monitor ("Current register contents: %p", displayRegisterFile);
+    //$monitor ("Current register contents: %p", displayRegisterFile); // DOESNT SEEM TO BE UPDATING...
   end
   /*-----------End Initialize displayRegisterFile -----------*/
 /*============END MONITOR CHANGED REGISTERS============*/

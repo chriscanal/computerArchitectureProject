@@ -26,7 +26,7 @@ module controlUnit (Opcode, RegDst, ALUSrc, MemtoReg, RegWrite,  MemRead, MemWri
 	    RegDst = 0; ALUSrc = 0; MemtoReg = 0; RegWrite = 0; MemRead = 0; MemWrite = 0; Branch = 1; Jump = 0;
 	    ALUOp = 2'b01;
 	  end
-	6'b010000: // jump
+	6'b000010: // jump
 	  begin
 	    RegDst = 0; ALUSrc = 0; MemtoReg = 0; RegWrite = 0; MemRead = 0; MemWrite = 0; Branch = 0; Jump = 1;
 	    ALUOp = 2'b00;
