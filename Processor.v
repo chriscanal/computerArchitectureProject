@@ -1,5 +1,7 @@
 // Processor that can perform lw
 
+`timescale 1ns/100ps
+
 module Processor(
     clk, 
     instruction, 
@@ -81,7 +83,7 @@ module Processor(
 
 /*-----------Control-----------*/
   //INPUTS
-  reg [0:4] controlOpcodeInput;
+  reg [5:0] controlOpcodeInput;
  
   //OUTPUTS
   wire controlALUSrcOutput;
@@ -259,7 +261,7 @@ module Processor(
 
 
 /*-----------ALUControl-----------*/
-  ALUControl myALUControl( .ALUOp(ALUControlFunctInput), .Funct(ALUControlOpInput), .Operation(ALUControlOperationOutput) );
+  ALUControl myALUControl( .ALUOp(ALUControlOpInput), .Funct(ALUControlFunctInput), .Operation(ALUControlOperationOutput) );
 /*---------END ALUControl---------*/
 
 
@@ -294,7 +296,7 @@ module Processor(
 
 
 /*-----------JumpShiftLeft-----------*/
-  Shift_left_two myJumpShiftLeft( .out(jumpShifLeftOutput), .instructionIn(jumpShiftLeftInstructionInput), .PCIn(jumpShiftLeftPCInput) );
+  Shift_left_two_jumpAddress myJumpShiftLeft( .out(jumpShifLeftOutput), .instructionIn(jumpShiftLeftInstructionInput), .PCIn(jumpShiftLeftPCInput) );
 /*---------END JumpShiftLeft---------*/
 
 
@@ -399,8 +401,8 @@ module Processor(
 
 /*============DATAPATH CONNECTIONS============*/
   initial begin
-    MUXJumpInputA = 32'b00000000000000000000101110111000;
-    MUXJumpInputB = 32'b00000000000000000000101110111000;
+    MUXJumpInputA = 32'b00000000000000000011000000000000;
+    MUXJumpInputB = 32'b00000000000000000011000000000000;
     MUXJumpControlInput = 1'b0;
     //Set initial value of instruction address to 3000
     //( .out(MUXJumpOutput), .A(MUXJumpInputA), .B(MUXJumpInputB), .sel(MUXJumpControlInput) );
@@ -411,6 +413,8 @@ module Processor(
   always@(posedge clk)
   begin
     #1;
+    if (instruction == 32'b11111100000000000000000000000000)
+      $finish;
     /*-----------Instruction Stage-----------*/
     
     memoryInstAddrInput_processorOutput = MUXJumpOutput;

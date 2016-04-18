@@ -454,3 +454,1334 @@
 # Compile of Shift_left_two_jumpAddress_tb.v was successful.
 # Compile of Shift_left_two_jumpAddress.v was successful.
 # 25 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui 
+# Start time: 20:43:41 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'Processor' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myMemory File: C:/Modeltech_pe_edu_10.4a/examples/memory.v
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'Processor_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myMemory File: C:/Modeltech_pe_edu_10.4a/examples/memory.v
+# Error loading design
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 20:44:53 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'Processor_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /Processor_tb/myProcessor File: C:/Modeltech_pe_edu_10.4a/examples/Processor.v
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+# Error loading design
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 20:45:40 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(58): [PCDPC] - Port size (5) does not match connection size (1) for port 'writtenRegAddressOutput'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Processor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor File: C:/Modeltech_pe_edu_10.4a/examples/Processor.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(58): [PCDPC] - Port size (32) does not match connection size (1) for port 'writtenRegDataOutput'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/Processor.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor File: C:/Modeltech_pe_edu_10.4a/examples/Processor.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(264): [PCDPC] - Port size (2) does not match connection size (6) for port 'ALUOp'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myALUControl File: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(264): [PCDPC] - Port size (6) does not match connection size (2) for port 'Funct'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myALUControl File: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(292): [PCDPC] - Port size (6) does not match connection size (5) for port 'Opcode'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myControl File: C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
+# ** Error: (vsim-3389) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Port 'instructionIn' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# ** Error: (vsim-3389) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Port 'PCIn' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# ** Fatal: (vsim-3365) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Too many port connections. Expected 2, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 2 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 2 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v failed with 2 errors.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 2 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 20:49:15 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(264): [PCDPC] - Port size (2) does not match connection size (6) for port 'ALUOp'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myALUControl File: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(264): [PCDPC] - Port size (6) does not match connection size (2) for port 'Funct'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myALUControl File: C:/Modeltech_pe_edu_10.4a/examples/ALUControl.v
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(292): [PCDPC] - Port size (6) does not match connection size (5) for port 'Opcode'. The port definition is at: C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myControl File: C:/Modeltech_pe_edu_10.4a/examples/controlUnit.v
+# ** Error: (vsim-3389) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Port 'instructionIn' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# ** Error: (vsim-3389) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Port 'PCIn' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# ** Fatal: (vsim-3365) C:/Modeltech_pe_edu_10.4a/examples/Processor.v(299): Too many port connections. Expected 2, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myProcessor/myJumpShiftLeft File: C:/Modeltech_pe_edu_10.4a/examples/Shift_left_two.v
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 20:56:04 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+# ** Error (suppressible): (vsim-8323) C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v(165): $monitor : Argument number 2 is an unpacked type, and may only be printed with the '%p' format.
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb File: C:/Modeltech_pe_edu_10.4a/examples/Processor_tb.v
+# Error loading design
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 20:57:24 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/displayRegisterFile
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftjx4t1b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftjx4t1b
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+run
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput
+run
+add wave  \
+sim:/Processor_tb/memoryDataInInput
+run
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v failed with 12 errors.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 1 failed with 12 errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 21:26:50 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftc45vd1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftc45vd1
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+run
+run
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 21:36:36 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft4vk13r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft4vk13r
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+run
+run
+run
+run
+run
+# Load canceled
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 21:39:36 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftj3akq0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftj3akq0
+# 
+run
+run
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 21:42:10 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftszcjk2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftszcjk2
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+add wave  \
+sim:/Processor_tb/memoryInstOutOutput
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:00:24 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlfthhqs5f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfthhqs5f
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+run
+add wave  \
+sim:/Processor_tb/memoryInstOutOutput
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:14:20 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftf0fr9h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftf0fr9h
+# 
+run
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "?C:Modeltech_pe_edu_10.4aexamplesMinMax.hexdump" for reading.
+# 
+# Invalid argument. (errno = EINVAL)    : C:/Modeltech_pe_edu_10.4a/examples/memory.v(50)
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myMemory
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+run
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:24:04 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlfthj7ine".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfthj7ine
+# 
+run
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "?C:Modeltech_pe_edu_10.4aexamplesMinMax.hexdump" for reading.
+# 
+# Invalid argument. (errno = EINVAL)    : C:/Modeltech_pe_edu_10.4a/examples/memory.v(50)
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myMemory
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:27:58 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftv7rmyv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftv7rmyv
+# 
+run
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "?C:Modeltech_pe_edu_10.4aexamplesMinMax.hexdump" for reading.
+# 
+# Invalid argument. (errno = EINVAL)    : C:/Modeltech_pe_edu_10.4a/examples/memory.v(50)
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myMemory
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+run
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+run
+run
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:35:44 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftkh76r3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkh76r3
+# 
+run
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "?C:Modeltech_pe_edu_10.4aexamplesMinMax.hexdump" for reading.
+# 
+# Invalid argument. (errno = EINVAL)    : C:/Modeltech_pe_edu_10.4a/examples/memory.v(50)
+#    Time: 0 ps  Iteration: 0  Instance: /Processor_tb/myMemory
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Hello
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:45:52 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlft6qfebi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6qfebi
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Compile of Two_to_one_MUX.v was successful.
+# Compile of Two_to_one_MUX_tb.v was successful.
+# Compile of Reg_32_bit.v was successful.
+# Compile of Reg_32_bit_tb.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_file_tb.v was successful.
+# Compile of controlUnit.v was successful.
+# Compile of controlUnit_tb.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ALUControl_tb.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_tb.v was successful.
+# Compile of Shift_left_two.v was successful.
+# Compile of Shift_left_two_tb.v was successful.
+# Compile of Sign_extend.v was successful.
+# Compile of Sign_extend_tb.v was successful.
+# Compile of And_gate.v was successful.
+# Compile of And_gate_tb.v was successful.
+# Compile of Processor.v was successful.
+# Compile of Processor_tb.v was successful.
+# Compile of memory.v was successful.
+# Compile of Two_to_one_MUX_5bit.v was successful.
+# Compile of Two_to_one_MUX_5bit_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress_tb.v was successful.
+# Compile of Shift_left_two_jumpAddress.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.Processor_tb
+# vsim 
+# Start time: 22:53:28 on Apr 17,2016
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.ALU
+# Loading work.ALUControl
+# Loading work.And_gate
+# Loading work.Shift_left_two
+# Loading work.controlUnit
+# Loading work.Shift_left_two_jumpAddress
+# Loading work.Two_to_one_MUX
+# Loading work.Two_to_one_MUX_5bit
+# Loading work.regFile
+# Loading work.Sign_extend
+# Loading work.Memory
+add wave  \
+sim:/Processor_tb/writtenRegDataOutput \
+sim:/Processor_tb/writtenRegAddressOutput \
+sim:/Processor_tb/memoryMemWriteInput_processorOutput \
+sim:/Processor_tb/memoryMemWriteInput \
+sim:/Processor_tb/memoryMemReadInput_processorOutput \
+sim:/Processor_tb/memoryMemReadInput \
+sim:/Processor_tb/memoryInstOutOutput \
+sim:/Processor_tb/memoryInstAddrInput_processorOutput \
+sim:/Processor_tb/memoryInstAddrInput \
+sim:/Processor_tb/memoryDataOutOutput_processorInput \
+sim:/Processor_tb/memoryDataOutOutput \
+sim:/Processor_tb/memoryDataInInput_processorOutput \
+sim:/Processor_tb/memoryDataInInput \
+sim:/Processor_tb/memoryDataAddrInput_processorOutput \
+sim:/Processor_tb/memoryDataAddrInput \
+sim:/Processor_tb/instruction \
+sim:/Processor_tb/displayRegisterFile \
+sim:/Processor_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nickk_000  Hostname: FIREANDBLOOD  ProcessID: 12980
+# 
+#           Attempting to use alternate WLF file "./wlftseymbe".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftseymbe
+# 
+run
+# Current register contents: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello2
+# Hello1
+# Hello1

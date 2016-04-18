@@ -1,5 +1,7 @@
 // Processor that can perform lw
 
+`timescale 1ns/100ps
+
 module Processor(
     clk, 
     instruction, 
@@ -81,7 +83,7 @@ module Processor(
 
 /*-----------Control-----------*/
   //INPUTS
-  reg [0:4] controlOpcodeInput;
+  reg [5:0] controlOpcodeInput;
  
   //OUTPUTS
   wire controlALUSrcOutput;
@@ -259,7 +261,7 @@ module Processor(
 
 
 /*-----------ALUControl-----------*/
-  ALUControl myALUControl( .ALUOp(ALUControlFunctInput), .Funct(ALUControlOpInput), .Operation(ALUControlOperationOutput) );
+  ALUControl myALUControl( .ALUOp(ALUControlOpInput), .Funct(ALUControlFunctInput), .Operation(ALUControlOperationOutput) );
 /*---------END ALUControl---------*/
 
 
@@ -294,7 +296,7 @@ module Processor(
 
 
 /*-----------JumpShiftLeft-----------*/
-  Shift_left_two myJumpShiftLeft( .out(jumpShifLeftOutput), .instructionIn(jumpShiftLeftInstructionInput), .PCIn(jumpShiftLeftPCInput) );
+  Shift_left_two_jumpAddress myJumpShiftLeft( .out(jumpShifLeftOutput), .instructionIn(jumpShiftLeftInstructionInput), .PCIn(jumpShiftLeftPCInput) );
 /*---------END JumpShiftLeft---------*/
 
 
@@ -411,6 +413,8 @@ module Processor(
   always@(posedge clk)
   begin
     #1;
+    if (instruction == 32'b11111100000000000000000000000000)
+      $finish;
     /*-----------Instruction Stage-----------*/
     
     memoryInstAddrInput_processorOutput = MUXJumpOutput;
@@ -457,11 +461,25 @@ module Processor(
     branchAddControlInput = 4'b0010;
     branchAddPort0Input = PCAddResultOutput;
     branchAddPort1Input = branchShifLeftOutput;
+    //( .ALUControl(branchAddControlInput), .DataIn0(branchAddPort0Input), .DataIn1(branchAddPort1Input), .DataOut(branchAddResultOutput), .ZeroOut(branchAddZeroResultOutput) );
     #1;
     //and gate
     andGateInput1 = controlBranchOutput;
     andGateInput2 = ALUZeroResultOutput;
     //( .out(andGateOutput), .in1(andGateInput1), .in2(andGateInput2) )
+    #1;
+    //Branch Mux
+    MUXBranchInputA = PCAddResultOutput;
+    MUXBranchInputB = branchAddResultOutput;
+    MUXBranchControlInput = andGateOutput;
+    //( .out(MUXBranchOutput), .A(MUXBranchInputA), .B(MUXBranchInputB), .sel(MUXBranchControlInput) )
+    #1;
+    //Jump Mux
+    MUXJumpInputA = jumpShifLeftOutput;
+    MUXJumpInputB = MUXBranchOutput;
+    MUXJumpControlInput = controlJumpOutput;
+    //( .out(MUXJumpOutput), .A(MUXJumpInputA), .B(MUXJumpInputB), .sel(MUXJumpControlInput) );
+   
 
     /*-----------End Execution Stage-----------*/
     
@@ -493,7 +511,7 @@ module Processor(
 /*============SET OUTPUT OF PROCESSOR TO WRITTEN REGISTER ============*/
 
 
-  /*   Set processorOut equal to 1   */
+  /*   Set processor output equal to the register that was changed this instruction cycle   */
   always@(regFileWriteRegDataInput)
   begin
     writtenRegAddressOutput = regFileRegWriteInput;
