@@ -1,4 +1,4 @@
-// Processor that can perform lw
+// Processor that can perform add, addi, addiu, slt, beq, j, lw, sw
 
 `timescale 1ns/100ps
 
@@ -375,9 +375,9 @@ module Processor(
   begin
       /*-----------MUX control lines-----------*/
 
-      MUXALUSrcControlInput = controlALUSrcOutput;      //For all of these, we need to be careful about which MUX inputs should be
-      MUXBranchControlInput = controlBranchOutput;      //selected when.  Right now when sel is 0 the output follows B, and when
-      MUXJumpControlInput = controlJumpOutput;          //sel is 1 the output follows A
+      MUXALUSrcControlInput = controlALUSrcOutput;      
+      MUXBranchControlInput = controlBranchOutput;      
+      MUXJumpControlInput = controlJumpOutput;          
       MUXMemtoRegControlInput = controlMemtoRegOutput;
       MUXRegDstControlInput = controlRegDstOutput;
 

@@ -1,9 +1,8 @@
-/*  Every time an instruction is executed, update the register file variable by using the 
-    "writtenReg" and "writtenRegData" outputs of the processor.  Have the register file be in 
-    the monitor system call somehow (will probably have to make 32 different variables for each 
-    register. Syntax of monitor: $monitor ("format_string", par_1, par_2, ... );
+/* Testbench for Processor.v, creates an instance of processor, an instance of 
+   memory and generates a clock.  Then it connects appropriate ports of processor
+   and memory to each other. The clock starting causes the processor to start 
+   reading instructions from memory to execute.
 */
-
 `timescale 1ns/100ps
 
 module Processor_tb;
@@ -41,13 +40,13 @@ module Processor_tb;
   /*-----------End Memory-----------*/
 
 
-  /*-----------Register Output Monitor-------------*/
+  /*-----------Output Monitor-------------*/
 
   reg [31:0] displayRegisterFile [31:0];
   reg [6:0] i;
   reg [31:0] regNumbers;
 
-  /*-----------End Register Output Monitor-----------*/
+  /*-----------End Output Monitor-----------*/
 
 /*============END DECLERATIONS============*/
 
@@ -112,7 +111,7 @@ Memory myMemory(
   initial begin
   clk = 0;
   end
-  always #500clk=~clk; /* 10MHz clock (50*1ns*2) with 50% duty-cycle */
+  always #500clk=~clk; /* 1MHz clock (500*1ns*2) with 500% duty-cycle */
 /*============END INITIALIZE CLOCK============*/
 
 
@@ -123,10 +122,9 @@ Memory myMemory(
   always@(posedge clk)
   begin
     displayRegisterFile[writtenRegAddressOutput] = writtenRegDataOutput;
-    $display("
-    $display("Current register contents: %p", displayRegisterFile);
+    $monitor("Current register contents: %p", displayRegisterFile);
   end
-  /*-----------Update contents of displayRegisterFile -----------*/
+  /*-----------End Update contents of displayRegisterFile -----------*/
 
   /*-----------Initialize displayRegisterFile -----------*/
   initial 
@@ -164,19 +162,11 @@ Memory myMemory(
     displayRegisterFile[5'b11101] = 32'b00000000000000000000000000000000;
     displayRegisterFile[5'b11110] = 32'b00000000000000000000000000000000;
     displayRegisterFile[5'b11111] = 32'b00000000000000000000000000000000;
-    
-    //Set contents of registerNumbers
-    i = 0;
-    while( i < 32 )
-    begin
-      regNumbers[i] = i;
-      i = i + 1;
-    end
 
-    //Set up displayRegisterFile to show its contents every time they are changed
-    //$monitor ("Current register contents: %p", displayRegisterFile); // DOESNT SEEM TO BE UPDATING...
+
   end
   /*-----------End Initialize displayRegisterFile -----------*/
+ 
 /*============END MONITOR CHANGED REGISTERS============*/
   
 endmodule

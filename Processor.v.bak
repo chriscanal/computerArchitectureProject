@@ -1,4 +1,4 @@
-// Processor that can perform lw
+// Processor that can perform add, addi, addiu, slt, beq, j, lw, sw
 
 `timescale 1ns/100ps
 
@@ -514,8 +514,8 @@ module Processor(
   /*   Set processor output equal to the register that was changed this instruction cycle   */
   always@(MUXMemtoRegOutput or MUXRegDstOut)
   begin
-    writtenRegAddressOutput = MUXMemtoRegOutput;
-    writtenRegDataOutput = MUXRegDstOut;
+    writtenRegAddressOutput = MUXRegDstOut;
+    writtenRegDataOutput = MUXMemtoRegOutput;
   end
 
 
