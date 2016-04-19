@@ -511,11 +511,13 @@ module Processor(
 /*============SET OUTPUT OF PROCESSOR TO WRITTEN REGISTER ============*/
 
 
-  /*   Set processor output equal to the register that was changed this instruction cycle   */
   always@(MUXMemtoRegOutput or MUXRegDstOut)
   begin
-    writtenRegAddressOutput = MUXRegDstOut;
-    writtenRegDataOutput = MUXMemtoRegOutput;
+    if(controlRegWriteOutput == 1)
+    begin
+    	writtenRegAddressOutput = MUXRegDstOut;
+    	writtenRegDataOutput = MUXMemtoRegOutput;
+    end
   end
 
 

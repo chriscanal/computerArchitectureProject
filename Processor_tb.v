@@ -1,7 +1,16 @@
-/* Testbench for Processor.v, creates an instance of processor, an instance of 
-   memory and generates a clock.  Then it connects appropriate ports of processor
-   and memory to each other. The clock starting causes the processor to start 
-   reading instructions from memory to execute.
+/* 
+   NAMES OF GROUP MEMBERS:
+     Nicolas Knaian
+     Chris Canal
+
+   DESCRIPTION OF TESTBENCH FUNCTION:
+     Testbench for Processor.v, creates an instance of processor, an instance of 
+     memory and generates a clock.  Then it connects appropriate ports of processor
+     and memory to each other. The clock starting causes the processor to start 
+     reading instructions from memory to execute.
+
+     At every clock cycle the register contents are displayed in the transcript window
+     (via displayRegisterFile)
 */
 `timescale 1ns/100ps
 
@@ -42,7 +51,8 @@ module Processor_tb;
 
   /*-----------Output Monitor-------------*/
 
-  reg [31:0] displayRegisterFile [31:0];
+  reg signed [31:0] displayRegisterFile [31:0];
+  reg [8:0] clockCycleNumber;
 
   /*-----------End Output Monitor-----------*/
 
@@ -108,6 +118,7 @@ Memory myMemory(
 /*============INITIALIZE CLOCK============*/
   initial begin
   clk = 0;
+  clockCycleNumber = 0;
   end
   always #500clk=~clk; /* 1MHz clock (500*1ns*2) with 500% duty-cycle */
 /*============END INITIALIZE CLOCK============*/
@@ -119,8 +130,12 @@ Memory myMemory(
   /*-----------Update contents of displayRegisterFile -----------*/
   always@(posedge clk)
   begin
-    displayRegisterFile[writtenRegAddressOutput] = writtenRegDataOutput;
-    $monitor("Current register contents: %p", displayRegisterFile);
+    if( clockCycleNumber >= 1 )
+    begin
+      displayRegisterFile[writtenRegAddressOutput] = writtenRegDataOutput;
+      $display("Register file contents after clock cycle %d: %p", clockCycleNumber, displayRegisterFile);
+    end
+    clockCycleNumber = clockCycleNumber + 1;
   end
   /*-----------End Update contents of displayRegisterFile -----------*/
 

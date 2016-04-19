@@ -375,9 +375,9 @@ module Processor(
   begin
       /*-----------MUX control lines-----------*/
 
-      MUXALUSrcControlInput = controlALUSrcOutput;      //For all of these, we need to be careful about which MUX inputs should be
-      MUXBranchControlInput = controlBranchOutput;      //selected when.  Right now when sel is 0 the output follows B, and when
-      MUXJumpControlInput = controlJumpOutput;          //sel is 1 the output follows A
+      MUXALUSrcControlInput = controlALUSrcOutput;      
+      MUXBranchControlInput = controlBranchOutput;      
+      MUXJumpControlInput = controlJumpOutput;          
       MUXMemtoRegControlInput = controlMemtoRegOutput;
       MUXRegDstControlInput = controlRegDstOutput;
 
@@ -514,8 +514,11 @@ module Processor(
   /*   Set processor output equal to the register that was changed this instruction cycle   */
   always@(MUXMemtoRegOutput or MUXRegDstOut)
   begin
-    writtenRegAddressOutput = MUXRegDstOut;
-    writtenRegDataOutput = MUXMemtoRegOutput;
+    if(controlRegWriteOutput == 1)
+    begin
+    	writtenRegAddressOutput = MUXRegDstOut;
+    	writtenRegDataOutput = MUXMemtoRegOutput;
+    end
   end
 
 
